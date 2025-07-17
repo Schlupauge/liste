@@ -22,10 +22,38 @@ www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-item-renderer
 ! YT Sidebar - Hide Shorts
 www.youtube.com###related ytd-compact-video-renderer:has([overlay-style="SHORTS"])
 
-! YT Home - Hide videos based on channel names
-!youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#avatar-link:is([title="regenerationnationtv"], [title*="RNTV"], [title="regenerationnationtv"i]))
-! YT Sidebar - Hide videos based on channel names
-!youtube.com###related ytd-compact-video-renderer:has(#text.ytd-channel-name[title]:is([title="RNTV"], [title="Case=regenerationnationtv"i]))
+! 1= YT Home - Hide videos based on channel names 2= YT Sidebar - Hide videos based on channel names
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#avatar-link:is([title="BlitzTickerAktuel"], [title*="BlitzTickerAktuel"], [title="Case Insensitive Channel Name"i]))
+youtube.com###related ytd-compact-video-renderer:has(#text.ytd-channel-name[title]:is([title="BlitzTickerAktuel"], [title="BlitzTickerAktuel"i]))
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#avatar-link:is([title="Deutschland der Zukunft"], [title*="DeutschlandderZukunft"], [title="Case Insensitive Channel Name"i]))
+youtube.com###related ytd-compact-video-renderer:has(#text.ytd-channel-name[title]:is([title="Deutschland der Zukunft"], [title="DeutschlandderZukunft"i]))
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#avatar-link:is([title="Triumph Deutschland"], [title*="TriumphDeutschland-y3i"], [title="triumphdeutschland-y3i"i]))
+youtube.com###related ytd-compact-video-renderer:has(#text.ytd-channel-name[title]:is([title="Triumph Deutschland"], [title="TriumphDeutschland-y3i"i]))
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#avatar-link:is([title="Stimmen aus der Politik"], [title*="StimmenausderPolitik"], [title="stimmenausderpolitik"i]))
+youtube.com###related ytd-compact-video-renderer:has(#text.ytd-channel-name[title]:is([title="Stimmen aus der Politik"], [title="StimmenausderPolitik"i]))
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#avatar-link:is([title="politik_durchdacht"], [title*="Politik Durchdacht"], [title="politikdurchdacht"i]))
+youtube.com###related ytd-compact-video-renderer:has(#text.ytd-channel-name[title]:is([title="politik_durchdacht"], [title="Politik Durchdacht"i]))
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#avatar-link:is([title="GermanyAktuell"], [title*="Germany Aktuell"], [title="germany aktuell"i]))
+youtube.com###related ytd-compact-video-renderer:has(#text.ytd-channel-name[title]:is([title="GermanyAktuell"], [title="Germany Aktuell"i]))
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#avatar-link:is([title="salatwaffel7856"], [title*="Salatwaffel"], [title="salatwaffel"i]))
+youtube.com###related ytd-compact-video-renderer:has(#text.ytd-channel-name[title]:is([title="salatwaffel7856"], [title="Salatwaffel"i]))
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#avatar-link:is([title="PatriotischerKompass"], [title*="Patriotischer Kompass"], [title="patriotischer kompass"i]))
+youtube.com###related ytd-compact-video-renderer:has(#text.ytd-channel-name[title]:is([title="PatriotischerKompass"], [title="Patriotischer Kompass"i]))
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#avatar-link:is([title="RussianspinDeutsch"], [title*="RussianspinDeutsch"], [title="patriotischer kompass"i]))
+youtube.com###related ytd-compact-video-renderer:has(#text.ytd-channel-name[title]:is([title="RussianspinDeutsch"], [title="RussianspinDeutsch"i]))
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#avatar-link:is([title="newsde"], [title*="News.de"], [title="news"i]))
+youtube.com###related ytd-compact-video-renderer:has(#text.ytd-channel-name[title]:is([title="newsde"], [title="News.de"i]))
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#avatar-link:is([title="WELTVideoTV"], [title*="WELT Nachrichtensender"], [title="news"i]))
+youtube.com###related ytd-compact-video-renderer:has(#text.ytd-channel-name[title]:is([title="WELTVideoTV"], [title="WELT Nachrichtensender"i]))
+youtube.com##ytd-search ytd-video-renderer:has(#text.ytd-channel-name:is([title="WELTVideoTV"], [title="WELT Nachrichtensender"]))
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#avatar-link:is([title="focusonline"], [title*="FOCUS online"], [title="news"i]))
+youtube.com###related ytd-compact-video-renderer:has(#text.ytd-channel-name[title]:is([title="focusonline"], [title="FOCUS online"i]))
+youtube.com##ytd-search ytd-video-renderer:has(#text.ytd-channel-name:is([title="focusonline"], [title="FOCUS online"]))
+! YT Home - No Videos
 www.youtube.com##ytd-browse[page-subtype="home"]
+! YT Videos - No Sidebar
 www.youtube.com##ytd-watch-flexy #secondary
+! YT Videos - Sidebar Without Recommendations
 www.youtube.com##ytd-watch-flexy #secondary
+! 17.07.2025 https://www.youtube.com
+www.youtube.com###dismissible > .ytd-shelf-renderer.style-scope
