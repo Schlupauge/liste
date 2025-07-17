@@ -1,31 +1,13 @@
 youtube.com##ytd-rich-item-renderer, ytd-grid-video-renderer, ytd-video-renderer, ytd-channel-renderer:has(a[href*="/@BlitzTickerAktuel"], a[href*="/@DeutschlandderZukunft"], a[href*="/@StimmenausderPolitik"], a[href*="/@politik_durchdacht"], a[href*="/@GermanyAktuell"], a[href*="/@salatwaffel7856"], a[href*="/@PatriotischerKompass"], a[href*="/@RussianspinDeutsch"], a[href*="/@newsde"], a[href*="/@WELTVideoTV"], a[href*="/@focusonline"], a[href*="/@TriumphDeutschland-y3i"i]))
 youtube.com##ytd-search ytd-video-renderer:has(a[href*="/@BlitzTickerAktuel"], a[href*="/@DeutschlandderZukunft"], a[href*="/@StimmenausderPolitik"], a[href*="/@politik_durchdacht"], a[href*="/@GermanyAktuell"], a[href*="/@salatwaffel7856"], a[href*="/@PatriotischerKompass"], a[href*="/@RussianspinDeutsch"], a[href*="/@newsde"], a[href*="/@WELTVideoTV"], a[href*="/@focusonline"], a[href*="/@TriumphDeutschland-y3i"])
 youtube.com##ytd-search ytd-channel-renderer:has(a[href*="/@BlitzTickerAktuel"], a[href*="/@DeutschlandderZukunft"], a[href*="/@StimmenausderPolitik"], a[href*="/@politik_durchdacht"], a[href*="/@GermanyAktuell"], a[href*="/@salatwaffel7856"], a[href*="/@PatriotischerKompass"], a[href*="/@RussianspinDeutsch"], a[href*="/@newsde"], a[href*="/@WELTVideoTV"], a[href*="/@focusonline"], a[href*="/@TriumphDeutschland-y3i"])
-! YT Homepage and Subscriptions (Grid View) - Hide the Shorts section
-youtube.com##[is-shorts]
-! YT Menu - Hide the Shorts button
-www.youtube.com###guide [title="Shorts"], .ytd-mini-guide-entry-renderer[title="Shorts"]
-! YT Search - Hide Shorts
+! Shorts ausblenden – funktioniert auf Startseite, Abo-Feed, Suche, Sidebar etc.
+www.youtube.com##ytd-grid-video-renderer:has([overlay-style="SHORTS"])
+www.youtube.com##ytd-rich-item-renderer:has([overlay-style="SHORTS"])
+www.youtube.com##ytd-video-renderer:has([overlay-style="SHORTS"])
 www.youtube.com##ytd-search ytd-video-renderer:has([overlay-style="SHORTS"])
-! YT Search, Channels, Subscriptions (List View) and Sidebar/Below Player Recommendations - Hide the Shorts sections
-www.youtube.com##ytd-reel-shelf-renderer
-! YT Channels - Hide the Shorts tab
-www.youtube.com##[tab-title="Shorts"]
-! YT Subscriptions - Hide Shorts - Grid View
 www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-grid-video-renderer:has([overlay-style="SHORTS"])
-! YT Subscriptions - Hide Shorts - List View
 www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer:has([overlay-style="SHORTS"])
-! YT Subscriptions - New Layout - Hide Shorts
-www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-item-renderer:has([overlay-style="SHORTS"])
-! YT Sidebar - Hide Shorts
-www.youtube.com###related ytd-compact-video-renderer:has([overlay-style="SHORTS"])
-
-! YT Mobile - Hide the Shorts Menu button
-m.youtube.com##ytm-pivot-bar-item-renderer:has(>.pivot-shorts)
-! YT Mobile - Hide the Shorts sections
-m.youtube.com##ytm-reel-shelf-renderer
-m.youtube.com##ytm-rich-section-renderer:has([d^="M17.77,10.32l-1.2"])
-! YT Mobile - Hide Shorts in search results
-m.youtube.com##ytm-search ytm-video-with-context-renderer:has([data-style="SHORTS"])
-! YT Mobile - Hide the Shorts button on Channels
-m.youtube.com##[tab-title="Shorts"]
+www.youtube.com##ytd-reel-shelf-renderer
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Shorts$/i))
+www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^Shorts$/i))
