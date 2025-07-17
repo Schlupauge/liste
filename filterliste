@@ -25,7 +25,7 @@ www.youtube.com###related ytd-compact-video-renderer:has([overlay-style="SHORTS"
 ! YT Home - Hide videos based on channel names
 youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#avatar-link:is([title="regenerationnationtv"], [title*="RNTV"], [title="regenerationnationtv"i]))
 ! YT Sidebar - Hide videos based on channel names
-youtube.com###related ytd-compact-video-renderer:has(#text.ytd-channel-name[title]:is([title="RNTV"], [title="Case=regenerationnationtv"i]))
+!youtube.com###related ytd-compact-video-renderer:has(#text.ytd-channel-name[title]:is([title="RNTV"], [title="Case=regenerationnationtv"i]))
 www.youtube.com##ytd-browse[page-subtype="home"]
 www.youtube.com##ytd-watch-flexy #secondary
 www.youtube.com##ytd-watch-flexy #secondary
