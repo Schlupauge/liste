@@ -1,12 +1,6 @@
 youtube.com##ytd-rich-item-renderer, ytd-grid-video-renderer, ytd-video-renderer, ytd-channel-renderer:has(a[href*="/@BlitzTickerAktuel"], a[href*="/@DeutschlandderZukunft"], a[href*="/@StimmenausderPolitik"], a[href*="/@politik_durchdacht"], a[href*="/@GermanyAktuell"], a[href*="/@salatwaffel7856"], a[href*="/@PatriotischerKompass"], a[href*="/@RussianspinDeutsch"], a[href*="/@newsde"], a[href*="/@WELTVideoTV"], a[href*="/@focusonline"], a[href*="/@TriumphDeutschland-y3i"])
 youtube.com##ytd-search ytd-video-renderer:has(a[href*="/@BlitzTickerAktuel"], a[href*="/@DeutschlandderZukunft"], a[href*="/@StimmenausderPolitik"], a[href*="/@politik_durchdacht"], a[href*="/@GermanyAktuell"], a[href*="/@salatwaffel7856"], a[href*="/@PatriotischerKompass"], a[href*="/@RussianspinDeutsch"], a[href*="/@newsde"], a[href*="/@WELTVideoTV"], a[href*="/@focusonline"], a[href*="/@TriumphDeutschland-y3i"])
 youtube.com##ytd-search ytd-channel-renderer:has(a[href*="/@BlitzTickerAktuel"], a[href*="/@DeutschlandderZukunft"], a[href*="/@StimmenausderPolitik"], a[href*="/@politik_durchdacht"], a[href*="/@GermanyAktuell"], a[href*="/@salatwaffel7856"], a[href*="/@PatriotischerKompass"], a[href*="/@RussianspinDeutsch"], a[href*="/@newsde"], a[href*="/@WELTVideoTV"], a[href*="/@focusonline"], a[href*="/@TriumphDeutschland-y3i"])
-
-! 2023-11-27 https://www.youtube.com
-||www.gstatic.com/youtube/img/promos/growth/a9706959223875f7957360f0db193b7d89152edb26dadaf7e577a2d047bfeaf1_1440x810.png$image
-www.youtube.com###foreground-content
-twitch.tv##+js(twitch-videoad)
-
 ! YT Homepage and Subscriptions (Grid View) - Hide the Shorts section
 youtube.com##[is-shorts]
 ! YT Menu - Hide the Shorts button
