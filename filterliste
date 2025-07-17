@@ -1,0 +1,23 @@
+! 2023-11-27 https://www.youtube.com
+||www.gstatic.com/youtube/img/promos/growth/a9706959223875f7957360f0db193b7d89152edb26dadaf7e577a2d047bfeaf1_1440x810.png$image
+www.youtube.com###foreground-content
+twitch.tv##+js(twitch-videoad)
+
+! YT Homepage and Subscriptions (Grid View) - Hide the Shorts section
+youtube.com##[is-shorts]
+! YT Menu - Hide the Shorts button
+www.youtube.com###guide [title="Shorts"], .ytd-mini-guide-entry-renderer[title="Shorts"]
+! YT Search - Hide Shorts
+www.youtube.com##ytd-search ytd-video-renderer:has([overlay-style="SHORTS"])
+! YT Search, Channels, Subscriptions (List View) and Sidebar/Below Player Recommendations - Hide the Shorts sections
+www.youtube.com##ytd-reel-shelf-renderer
+! YT Channels - Hide the Shorts tab
+www.youtube.com##[tab-title="Shorts"]
+! YT Subscriptions - Hide Shorts - Grid View
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-grid-video-renderer:has([overlay-style="SHORTS"])
+! YT Subscriptions - Hide Shorts - List View
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer:has([overlay-style="SHORTS"])
+! YT Subscriptions - New Layout - Hide Shorts
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-item-renderer:has([overlay-style="SHORTS"])
+! YT Sidebar - Hide Shorts
+www.youtube.com###related ytd-compact-video-renderer:has([overlay-style="SHORTS"])
