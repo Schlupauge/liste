@@ -19,7 +19,8 @@ www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer:has
 www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-item-renderer:has([overlay-style="SHORTS"])
 ! YT Sidebar - Hide Shorts
 www.youtube.com###related ytd-compact-video-renderer:has([overlay-style="SHORTS"])
-
+!hide shorts in search results
+youtube.com##ytd-search ytd-reel-shelf-renderer
 ! YT Mobile - Hide the Shorts Menu button
 m.youtube.com##ytm-pivot-bar-item-renderer:has(>.pivot-shorts)
 ! YT Mobile - Hide the Shorts sections
@@ -29,3 +30,10 @@ m.youtube.com##ytm-rich-section-renderer:has([d^="M17.77,10.32l-1.2"])
 m.youtube.com##ytm-search ytm-video-with-context-renderer:has([data-style="SHORTS"])
 ! YT Mobile - Hide the Shorts button on Channels
 m.youtube.com##[tab-title="Shorts"]
+!rebuild grid on frontpage
+youtube.com##[page-subtype="home"] ytd-rich-grid-renderer > #contents > ytd-rich-section-renderer
+youtube.com##[page-subtype="home"] ytd-rich-item-renderer[rendered-from-rich-grid][is-in-first-column]:style(margin-left: calc(var(--ytd-rich-grid-item-margin) / 2) !important;)
+!force 4 items per row
+!youtube.com##[page-subtype="home"] ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 4 !important;)
+!hide videos I already watched in full (>=70%) on frontpage
+youtube.com##[page-subtype="home"] ytd-rich-item-renderer:has(#progress:matches-attr(style="/width: ([789][0-9]|100)%/"))
