@@ -1,63 +1,98 @@
-! === Mehrere Kanäle blockieren ===
-youtube.com##ytd-rich-item-renderer, ytd-grid-video-renderer, ytd-video-renderer, ytd-channel-renderer:has(a[href*="/@BlitzTickerAktuel"], \
-a[href*="/@DeutschlandderZukunft"], \
-a[href*="/@StimmenausderPolitik"], \
-a[href*="/@politik_durchdacht"], \
-a[href*="/@GermanyAktuell"], \
-a[href*="/@salatwaffel7856"], \
-a[href*="/@PatriotischerKompass"], \
-a[href*="/@RussianspinDeutsch"], \
-a[href*="/@newsde"], \
-a[href*="/@WELTVideoTV"], \
-a[href*="/@focusonline"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@TriumphDeutschland-y3i"])
+! YT Homepage and Subscriptions (Grid View) - Hide the Shorts section
+youtube.com##[is-shorts]
+! YT Menu - Hide the Shorts button
+www.youtube.com###guide [title="Shorts"], .ytd-mini-guide-entry-renderer[title="Shorts"]
+! YT Search - Hide Shorts
+www.youtube.com##ytd-search ytd-video-renderer:has([overlay-style="SHORTS"])
+! YT Search, Channels, Subscriptions (List View) and Sidebar/Below Player Recommendations - Hide the Shorts sections
+www.youtube.com##ytd-reel-shelf-renderer
+! YT Channels - Hide the Shorts tab
+www.youtube.com##[tab-title="Shorts"]
+! YT Subscriptions - Hide Shorts - Grid View
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-grid-video-renderer:has([overlay-style="SHORTS"])
+! YT Subscriptions - Hide Shorts - List View
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer:has([overlay-style="SHORTS"])
+! YT Subscriptions - New Layout - Hide Shorts
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-item-renderer:has([overlay-style="SHORTS"])
+! YT Sidebar - Hide Shorts
+www.youtube.com###related ytd-compact-video-renderer:has([overlay-style="SHORTS"])
+! YT cannel ausblenden YT suchliste channel ausblenden
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@Ungefiltert-f5v"]) 
+www.youtube.com##ytd-search ytd-channel-renderer #main-link[href="/@Ungefiltert-f5v"]:upward(ytd-channel-renderer)
+www.youtube.com###comment:has([alt="@Ungefiltert-f5v"])
+www.youtube.com###more-replies:nth-ancestor(6):has-text("@Ungefiltert-f5v")
 
-youtube.com##ytd-search ytd-video-renderer:has(a[href*="/@BlitzTickerAktuel"], \
-a[href*="/@DeutschlandderZukunft"], \
-a[href*="/@StimmenausderPolitik"], \
-a[href*="/@politik_durchdacht"], \
-a[href*="/@GermanyAktuell"], \
-a[href*="/@salatwaffel7856"], \
-a[href*="/@PatriotischerKompass"], \
-a[href*="/@RussianspinDeutsch"], \
-a[href*="/@newsde"], \
-a[href*="/@WELTVideoTV"], \
-a[href*="/@focusonline"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@TriumphDeutschland-y3i"])
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@Verheimlicht"]) 
+www.youtube.com##ytd-search ytd-channel-renderer #main-link[href="/@Verheimlicht"]:upward(ytd-channel-renderer)
+www.youtube.com###comment:has([alt="@Verheimlicht"])
+www.youtube.com###more-replies:nth-ancestor(6):has-text("@Verheimlicht")
 
-youtube.com##ytd-search ytd-channel-renderer:has(a[href*="/@BlitzTickerAktuel"], \
-a[href*="/@DeutschlandderZukunft"], \
-a[href*="/@StimmenausderPolitik"], \
-a[href*="/@politik_durchdacht"], \
-a[href*="/@GermanyAktuell"], \
-a[href*="/@salatwaffel7856"], \
-a[href*="/@PatriotischerKompass"], \
-a[href*="/@RussianspinDeutsch"], \
-a[href*="/@newsde"], \
-a[href*="/@WELTVideoTV"], \
-a[href*="/@focusonline"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], 
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@ERSETZEN"], \
-a[href*="/@TriumphDeutschland-y3i"])
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@WeltKlar-z2o"]) 
+www.youtube.com##ytd-search ytd-channel-renderer #main-link[href="/@WeltKlar-z2o"]:upward(ytd-channel-renderer)
+www.youtube.com###comment:has([alt="@WeltKlar-z2o"])
+www.youtube.com###more-replies:nth-ancestor(6):has-text("@WeltKlar-z2o")
+
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@Kissler-Kompakt"]) 
+www.youtube.com##ytd-search ytd-channel-renderer #main-link[href="/@Kissler-Kompakt"]:upward(ytd-channel-renderer)
+www.youtube.com###comment:has([alt="@Kissler-Kompakt"])
+www.youtube.com###more-replies:nth-ancestor(6):has-text("@Kissler-Kompakt")
+
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@SchubertsLagemeldung"]) 
+www.youtube.com##ytd-search ytd-channel-renderer #main-link[href="/@SchubertsLagemeldung"]:upward(ytd-channel-renderer)
+www.youtube.com###comment:has([alt="@SchubertsLagemeldung"])
+www.youtube.com###more-replies:nth-ancestor(6):has-text("@SchubertsLagemeldung")
+
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@LIONMediaNews"]) 
+www.youtube.com##ytd-search ytd-channel-renderer #main-link[href="/@LIONMediaNews"]:upward(ytd-channel-renderer)
+www.youtube.com###comment:has([alt="@LIONMediaNews"])
+www.youtube.com###more-replies:nth-ancestor(6):has-text("@LIONMediaNews")
+
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@JasminKosubekOriginal"]) 
+www.youtube.com##ytd-search ytd-channel-renderer #main-link[href="/@artede"]:upward(ytd-channel-renderer)
+www.youtube.com###comment:has([alt="@artede"])
+www.youtube.com###more-replies:nth-ancestor(6):has-text("@JasminKosubekOriginal")
+
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@Politik.Aktuell.Deutschland"]) 
+www.youtube.com##ytd-search ytd-channel-renderer #main-link[href="/@chrilikon"]:upward(ytd-channel-renderer)
+www.youtube.com###comment:has([alt="@chrilikon"])
+www.youtube.com###more-replies:nth-ancestor(6):has-text("@Politik.Aktuell.Deutschland")
+
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@gluecksritter1"]) 
+www.youtube.com##ytd-search ytd-channel-renderer #main-link[href="/@chrilikon"]:upward(ytd-channel-renderer)
+www.youtube.com###comment:has([alt="@chrilikon"])
+www.youtube.com###more-replies:nth-ancestor(6):has-text("@gluecksritter1")
+
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@DieWeltundihreGeschichten"]) 
+www.youtube.com##ytd-search ytd-channel-renderer #main-link[href="/@chrilikon"]:upward(ytd-channel-renderer)
+www.youtube.com###comment:has([alt="@chrilikon"])
+www.youtube.com###more-replies:nth-ancestor(6):has-text("@DieWeltundihreGeschichten")
+
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@verschwiegenYt"]) 
+www.youtube.com##ytd-search ytd-channel-renderer #main-link[href="/@chrilikon"]:upward(ytd-channel-renderer)
+www.youtube.com###comment:has([alt="@chrilikon"])
+www.youtube.com###more-replies:nth-ancestor(6):has-text("@verschwiegenYt")
+
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@Weltpolitik_Unzensiert"]) 
+www.youtube.com##ytd-search ytd-channel-renderer #main-link[href="/@chrilikon"]:upward(ytd-channel-renderer)
+www.youtube.com###comment:has([alt="@chrilikon"])
+www.youtube.com###more-replies:nth-ancestor(6):has-text("@Weltpolitik_Unzensiert")
+
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@RealPolitik360"]) 
+www.youtube.com##ytd-search ytd-channel-renderer #main-link[href="/@chrilikon"]:upward(ytd-channel-renderer)
+www.youtube.com###comment:has([alt="@chrilikon"])
+www.youtube.com###more-replies:nth-ancestor(6):has-text("@RealPolitik360")
+
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@joana_cotar"]) 
+www.youtube.com##ytd-search ytd-channel-renderer #main-link[href="/@chrilikon"]:upward(ytd-channel-renderer)
+www.youtube.com###comment:has([alt="@chrilikon"])
+www.youtube.com###more-replies:nth-ancestor(6):has-text("@joana_cotar")
+
+www.youtube.com##ytd-rich-item-renderer:has(a[href="/@AfD-Fraktion-BW"]) 
+www.youtube.com##ytd-search ytd-channel-renderer #main-link[href="/@chrilikon"]:upward(ytd-channel-renderer)
+www.youtube.com###comment:has([alt="@chrilikon"])
+www.youtube.com###more-replies:nth-ancestor(6):has-text("@AfD-Fraktion-BW")
+! 19.04.2025 https://www.youtube.com
+www.youtube.com##ytd-item-section-renderer.ytd-watch-next-secondary-results-renderer.style-scope
+
+##div>a:has-text(/weidel/)
+
