@@ -1,6 +1,21 @@
 ! ░░ YouTube – Blockiere unerwünschte Kanäle per @Handle (Startseite, Suche, Grid, Sidebar) ░░
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@Deutschlandheute-y7w"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@Deutschlandheute-y7w"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@Deutschlandheute-y7w"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@Deutschlandheute-y7w"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@Deutschlandheute-y7w"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@Deutschlandheute-y7w"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@Deutschlandheute-y7w"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@Deutschlandheute-y7w"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@klartextwinkler"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@klartextwinkler"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@klartextwinkler"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@klartextwinkler"])
+
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@klartext-gmbh"]),
 youtube.com##ytd-video-renderer:has(a[href*="/@klartext-gmbh"]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@klartext-gmbh"]),
