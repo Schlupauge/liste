@@ -1,42 +1,142 @@
-youtube.com##ytd-rich-item-renderer, ytd-grid-video-renderer, ytd-video-renderer, ytd-channel-renderer:has(a[href*="/@BlitzTickerAktuel"], a[href*="/@liberaleTendenz"], a[href*="/@DeutschlandderZukunft"], a[href*="/@TVEXPERTE"], a[href*="/@DeutschlandKontrovers"], a[href*="/@Andimacht1"], a[href*="/@schwarzerkanal-III"], a[href*="/PolitANALYSE"], a[href*="/@Desert93"], a[href*="/KrisenReport"], a[href*="/@StimmenausderPolitik"], a[href*="/@Michael_Meyen"], a[href*="/@politik_durchdacht"], a[href*="/@GermanyAktuell"], a[href*="/@salatwaffel7856"], a[href*="/@PatriotischerKompass"], a[href*="/@RussianspinDeutsch"], a[href*="/@jurgenelsasser6713"], a[href*="/@newsde"], a[href*="/@WELTVideoTV"], a[href*="/@WiederStark"], a[href*="/@WPatriotenEcho"], a[href*="/@focusonline"], a[href*="/@WeidelWunderland"], a[href*="/@PolitikMachtGeld"], a[href*="/@TriumphDeutschland-y3i"]))
-                                                            youtube.com##ytd-search ytd-video-renderer:has(a[href*="/@BlitzTickerAktuel"], a[href*="/@liberaleTendenz"], a[href*="/@DeutschlandderZukunft"], a[href*="/@TVEXPERTE"], a[href*="/@DeutschlandKontrovers"], a[href*="/@Andimacht1"], a[href*="/@schwarzerkanal-III"], a[href*="/PolitANALYSE"], a[href*="/@Desert93"], a[href*="/KrisenReport"], a[href*="/@StimmenausderPolitik"], a[href*="/@Michael_Meyen"], a[href*="/@politik_durchdacht"], a[href*="/@GermanyAktuell"], a[href*="/@salatwaffel7856"], a[href*="/@PatriotischerKompass"], a[href*="/@RussianspinDeutsch"], a[href*="/@jurgenelsasser6713"], a[href*="/@newsde"], a[href*="/@WELTVideoTV"], a[href*="/@WiederStark"], a[href*="/@WPatriotenEcho"], a[href*="/@focusonline"], a[href*="/@WeidelWunderland"], a[href*="/@PolitikMachtGeld"], a[href*="/@TriumphDeutschland-y3i"])
-                                                          youtube.com##ytd-search ytd-channel-renderer:has(a[href*="/@BlitzTickerAktuel"], a[href*="/@liberaleTendenz"], a[href*="/@DeutschlandderZukunft"], a[href*="/@TVEXPERTE"], a[href*="/@DeutschlandKontrovers"], a[href*="/@Andimacht1"], a[href*="/@schwarzerkanal-III"], a[href*="/PolitANALYSE"], a[href*="/@Desert93"], a[href*="/KrisenReport"], a[href*="/@StimmenausderPolitik"], a[href*="/@Michael_Meyen"], a[href*="/@politik_durchdacht"], a[href*="/@GermanyAktuell"], a[href*="/@salatwaffel7856"], a[href*="/@PatriotischerKompass"], a[href*="/@RussianspinDeutsch"], a[href*="/@jurgenelsasser6713"], a[href*="/@newsde"], a[href*="/@WELTVideoTV"], a[href*="/@WiederStark"], a[href*="/@WPatriotenEcho"], a[href*="/@focusonline"], a[href*="/@WeidelWunderland"], a[href*="/@PolitikMachtGeld"], a[href*="/@TriumphDeutschland-y3i"])
-! YT Homepage and Subscriptions (Grid View) - Hide the Shorts section
-youtube.com##[is-shorts]
-! YT Menu - Hide the Shorts button
-www.youtube.com###guide [title="Shorts"], .ytd-mini-guide-entry-renderer[title="Shorts"]
-! YT Search - Hide Shorts
-www.youtube.com##ytd-search ytd-video-renderer:has([overlay-style="SHORTS"])
-! YT Search, Channels, Subscriptions (List View) and Sidebar/Below Player Recommendations - Hide the Shorts sections
-www.youtube.com##ytd-reel-shelf-renderer
-! YT Channels - Hide the Shorts tab
-www.youtube.com##[tab-title="Shorts"]
-! YT Subscriptions - Hide Shorts - Grid View
-www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-grid-video-renderer:has([overlay-style="SHORTS"])
-! YT Subscriptions - Hide Shorts - List View
-www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer:has([overlay-style="SHORTS"])
-! YT Subscriptions - New Layout - Hide Shorts
-www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-item-renderer:has([overlay-style="SHORTS"])
-! YT Sidebar - Hide Shorts
-www.youtube.com###related ytd-compact-video-renderer:has([overlay-style="SHORTS"])
-!hide shorts in search results
-youtube.com##ytd-search ytd-reel-shelf-renderer
-! YT Mobile - Hide the Shorts Menu button
-m.youtube.com##ytm-pivot-bar-item-renderer:has(>.pivot-shorts)
-! YT Mobile - Hide the Shorts sections
-m.youtube.com##ytm-reel-shelf-renderer
-m.youtube.com##ytm-rich-section-renderer:has([d^="M17.77,10.32l-1.2"])
-! YT Mobile - Hide Shorts in search results
-m.youtube.com##ytm-search ytm-video-with-context-renderer:has([data-style="SHORTS"])
-! YT Mobile - Hide the Shorts button on Channels
-m.youtube.com##[tab-title="Shorts"]
-!rebuild grid on frontpage
-youtube.com##[page-subtype="home"] ytd-rich-grid-renderer > #contents > ytd-rich-section-renderer
-youtube.com##[page-subtype="home"] ytd-rich-item-renderer[rendered-from-rich-grid][is-in-first-column]:style(margin-left: calc(var(--ytd-rich-grid-item-margin) / 2) !important;)
-!force 4 items per row
-!youtube.com##[page-subtype="home"] ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 4 !important;)
-!hide videos I already watched in full (>=70%) on frontpage
-youtube.com##[page-subtype="home"] ytd-rich-item-renderer:has(#progress:matches-attr(style="/width: ([789][0-9]|100)%/"))
+! ░░ YouTube – Blockiere unerwünschte Kanäle per @Handle (Startseite, Suche, Grid, Sidebar) ░░
+
+! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@BlitzTickerAktuel"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@BlitzTickerAktuel"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@BlitzTickerAktuel"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@BlitzTickerAktuel"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@liberaleTendenz"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@liberaleTendenz"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@liberaleTendenz"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@liberaleTendenz"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@DeutschlandderZukunft"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@DeutschlandderZukunft"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@DeutschlandderZukunft"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@DeutschlandderZukunft"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@TVEXPERTE"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@TVEXPERTE"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@TVEXPERTE"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@TVEXPERTE"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@DeutschlandKontrovers"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@DeutschlandKontrovers"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@DeutschlandKontrovers"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@DeutschlandKontrovers"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@Andimacht1"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@Andimacht1"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@Andimacht1"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@Andimacht1"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@schwarzerkanal-III"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@schwarzerkanal-III"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@schwarzerkanal-III"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@schwarzerkanal-III"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitANALYSE"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@PolitANALYSE"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitANALYSE"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitANALYSE"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@Desert93"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@Desert93"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@Desert93"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@Desert93"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@KrisenReport"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@KrisenReport"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@KrisenReport"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@KrisenReport"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@StimmenausderPolitik"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@StimmenausderPolitik"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@StimmenausderPolitik"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@StimmenausderPolitik"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@Michael_Meyen"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@Michael_Meyen"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@Michael_Meyen"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@Michael_Meyen"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@politik_durchdacht"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@politik_durchdacht"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@politik_durchdacht"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@politik_durchdacht"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@GermanyAktuell"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@GermanyAktuell"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@GermanyAktuell"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@GermanyAktuell"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@salatwaffel7856"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@salatwaffel7856"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@salatwaffel7856"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@salatwaffel7856"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@PatriotischerKompass"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@PatriotischerKompass"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@PatriotischerKompass"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@PatriotischerKompass"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@RussianspinDeutsch"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@RussianspinDeutsch"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@RussianspinDeutsch"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@RussianspinDeutsch"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@jurgenelsasser6713"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@jurgenelsasser6713"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@jurgenelsasser6713"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@jurgenelsasser6713"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@newsde"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@newsde"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@newsde"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@newsde"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@WELTVideoTV"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@WELTVideoTV"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@WELTVideoTV"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@WELTVideoTV"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@WiederStark"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@WiederStark"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@WiederStark"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@WiederStark"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@WPatriotenEcho"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@WPatriotenEcho"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@WPatriotenEcho"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@WPatriotenEcho"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@focusonline"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@focusonline"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@focusonline"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@focusonline"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@WeidelWunderland"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@WeidelWunderland"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@WeidelWunderland"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@WeidelWunderland"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitikMachtGeld"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@PolitikMachtGeld"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitikMachtGeld"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitikMachtGeld"])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@TriumphDeutschland-y3i"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@TriumphDeutschland-y3i"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@TriumphDeutschland-y3i"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@TriumphDeutschland-y3i"])
+
+! ▶ Shorts auf der Startseite & überall sonst
+youtube.com##ytd-rich-item-renderer:has(a[href*="/shorts/"])
+youtube.com##ytd-video-renderer:has(a[href*="/shorts/"])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/shorts/"])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/shorts/"])
+youtube.com##ytd-reel-shelf-renderer
 
 ! YT Home - Hide Videos Below 1K Views
 !www.youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#video-title-link[aria-label~="views"]:not(:is([aria-label*=",0"],[aria-label*=",1"],[aria-label*=",2"],[aria-label*=",3"],[aria-label*=",4"],[aria-label*=",5"],[aria-label*=",6"],[aria-label*=",7"],[aria-label*=",8"],[aria-label*=",9"])))
