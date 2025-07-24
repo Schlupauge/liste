@@ -1,6 +1,11 @@
 ! ░░ YouTube – Blockiere unerwünschte Kanäle per @Handle (Startseite, Suche, Grid, Sidebar) ░░
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@AfDBayernTV1"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@AfDBayernTV1"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@AfDBayernTV1"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@AfDBayernTV1"])
+
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@fakten-klar"]),
 youtube.com##ytd-video-renderer:has(a[href*="/@fakten-klar"]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@fakten-klar"]),
