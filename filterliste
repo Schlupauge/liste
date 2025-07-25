@@ -8,7 +8,22 @@
 ! ░░ YouTube – Blockiere unerwünschte Kanäle per @Handle (Startseite, Suche, Grid, Sidebar) ░░
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
-youtube.com##ytd-rich-item-renderer:has(a[href*="/@@elenaroonmdl"i]),
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@Hapag-Lloyd-n1u"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@Hapag-Lloyd-n1u"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@Hapag-Lloyd-n1u"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@Hapag-Lloyd-n1u"i])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@JesusBreathe"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@JesusBreathe"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@JesusBreathe"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@JesusBreathe"i])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@SecularTalk"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@SecularTalk"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@SecularTalk"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@SecularTalk"i])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@elenaroonmdl"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@elenaroonmdl"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@elenaroonmdl"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@elenaroonmdl"i])
