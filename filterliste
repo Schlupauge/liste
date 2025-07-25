@@ -6,6 +6,11 @@ youtube.com##ytd-video-renderer:has(a[href*="/@elenaroonmdl"]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@elenaroonmdl"]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@elenaroonmdl"])
 
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@AktuelleStunde-h3s"]),
+youtube.com##ytd-video-renderer:has(a[href*="/@AktuelleStunde-h3s"]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@AktuelleStunde-h3s"]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@AktuelleStunde-h3s"])
+
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@AuroraFreyaOfficial"]),
 youtube.com##ytd-video-renderer:has(a[href*="/@AuroraFreyaOfficial"]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@AuroraFreyaOfficial"]),
