@@ -8,6 +8,27 @@
 ! ░░ YouTube – Blockiere unerwünschte Kanäle per @Handle (Startseite, Suche, Grid, Sidebar) ░░
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/Sofort News"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/Sofort News"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/Sofort News"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/Sofort News"i])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@ireloaded9216"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@ireloaded9216"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@ireloaded9216"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@ireloaded9216"i])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@DerBundesblick"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@DerBundesblick"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@DerBundesblick"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@DerBundesblick"i])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@letsmakemoney"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@letsmakemoney"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@letsmakemoney"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@letsmakemoney"i])
+
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Hapag-Lloyd-n1u"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Hapag-Lloyd-n1u"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Hapag-Lloyd-n1u"i]),
