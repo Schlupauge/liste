@@ -234,6 +234,12 @@ youtube.com##ytd-video-renderer:has(a[href*="/@elenaroonmdl"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@elenaroonmdl"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@elenaroonmdl"i])
 
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/Aktuelle Stunde"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/Aktuelle Stunde"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/Aktuelle Stunde"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/Aktuelle Stunde"i])
+
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@AktuelleStunde-h3s"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@AktuelleStunde-h3s"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@AktuelleStunde-h3s"i]),
@@ -364,6 +370,11 @@ youtube.com##ytd-video-renderer:has(a[href*="/@StimmenausderPolitik"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@StimmenausderPolitik"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@StimmenausderPolitik"i])
 
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@Kingagamemnon"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@Kingagamemnon"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@Kingagamemnon"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@Kingagamemnon"i])
+
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Michael_Meyen"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Michael_Meyen"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Michael_Meyen"i]),
@@ -438,6 +449,14 @@ youtube.com##ytd-rich-item-renderer:has(a[href*="/@TriumphDeutschland-y3i"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@TriumphDeutschland-y3i"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@TriumphDeutschland-y3i"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@TriumphDeutschland-y3i"i])
+
+! YT Home - Hide videos based on their titles
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#video-title-link:is([title*="Martin Sellner"], [title*="Martin Sellner"i], [title~="Martin Sellner"]))
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#video-title-link:is([title*="Freie Sachsen"], [title*="freie sachsen"i], [title~="freie sachsen"]))
+
+! YT Sidebar - Hide videos based on their titles
+youtube.com###related ytd-compact-video-renderer:has(#video-title:is([title*="FREIE SACHSEN"], [title*="freie sachsen"i], [title~="freie sachsen"]))
+youtube.com###related ytd-compact-video-renderer:has(#video-title:is([title*="Martin Sellner"], [title*="Martin Sellner"i], [title~="Martin Sellner"]))
 
 ! ▶ Shorts auf der Startseite & überall sonst
 
