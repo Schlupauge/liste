@@ -205,10 +205,15 @@ youtube.com##ytd-video-renderer:has(a[href*="/@SolgaTV"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@SolgaTV"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@SolgaTV"i])
 
-youtube.com##ytd-rich-item-renderer:has(a[href*="/@AfDFraktionLandtagBayern"i]),
-youtube.com##ytd-video-renderer:has(a[href*="/@AfDFraktionLandtagBayern"i]),
-youtube.com##ytd-grid-video-renderer:has(a[href*="/@AfDFraktionLandtagBayern"i]),
-youtube.com##ytd-compact-video-renderer:has(a[href*="/@AfDFraktionLandtagBayerni"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@WahrPolitik"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@WahrPolitik"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@WahrPolitik"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@WahrPolitik"i])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@AfDBayernTV1"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@AfDBayernTV1"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@AfDBayernTV1"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@AfDBayernTV1"i])
 
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@AfDBayernTV1"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@AfDBayernTV1"i]),
