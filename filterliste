@@ -14,6 +14,11 @@ youtube.com##ytd-video-renderer:has(a[href*="/@RentenNachrichtenDE"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@RentenNachrichtenDE"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@RentenNachrichtenDE"i])
 
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@videografreinhard"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@videografreinhard"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@videografreinhard"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@videografreinhard"i])
+
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@TheSavior.2024"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@TheSavior.2024"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@TheSavior.2024"i]),
@@ -389,6 +394,12 @@ youtube.com##ytd-rich-item-renderer:has(a[href*="/@DeutschlandKontrovers"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@DeutschlandKontrovers"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@DeutschlandKontrovers"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@DeutschlandKontrovers"i])
+
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@TagesFokus"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@TagesFokus"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@TagesFokus"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@TagesFokus"i])
 
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Andimacht1"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Andimacht1"i]),
