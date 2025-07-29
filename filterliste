@@ -14,6 +14,16 @@ youtube.com##ytd-video-renderer:has(a[href*="/@RentenNachrichtenDE"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@RentenNachrichtenDE"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@RentenNachrichtenDE"i])
 
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@TheSavior.2024"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@TheSavior.2024"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@TheSavior.2024"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@TheSavior.2024"i])
+
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@theamdispatch"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@theamdispatch"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@theamdispatch"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@theamdispatch"i])
+
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@MichaelHeaverYouTube_de"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@MichaelHeaverYouTube_de"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@MichaelHeaverYouTube_de"i]),
