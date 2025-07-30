@@ -583,11 +583,17 @@ youtube.com##ytd-video-renderer:has(a[href*="/@newsde"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@newsde"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@newsde"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^WELT Nachrichtensender$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@WELTVideoTV"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@WELTVideoTV"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@WELTVideoTV"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@WELTVideoTV"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^WELT Netzreporter$/))
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@DieNetzreporter"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@DieNetzreporter"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@DieNetzreporter"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@DieNetzreporter"i])
 
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@WiederStark"i]),
