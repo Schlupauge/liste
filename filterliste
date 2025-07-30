@@ -8,7 +8,7 @@
 ! ░░ YouTube – Blockiere unerwünschte Kanäle per @Handle (Startseite, Suche, Grid, Sidebar) ░░
 
 ! ▶︎ EIN Filterblock für Suche (/Weidel|AfD|Trump/ → regulärer Ausdruck für mehrere Begriffe (durch | getrennt).)
-youtube.com##ytd-video-renderer:has(a#video-title:matches-case(/Weidel|AfD|köppel|TV EXPERTE/))
+youtube.com##ytd-video-renderer:has(a#video-title:matches-case(/Weidel|Alice Weidel|AfD|köppel|TV EXPERTE/))
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
 
