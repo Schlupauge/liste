@@ -7,6 +7,9 @@
 ! License: https://github.com/gijsdev/ublock-hide-yt-shorts/blob/master/LICENSE.md
 ! ░░ YouTube – Blockiere unerwünschte Kanäle per @Handle (Startseite, Suche, Grid, Sidebar) ░░
 
+! ▶︎ EIN Filterblock für Suche (/Weidel|AfD|Trump/ → regulärer Ausdruck für mehrere Begriffe (durch | getrennt).)
+youtube.com##ytd-video-renderer:has(a#video-title:matches-case(/Weidel|AfD|köppel|TV EXPERTE/))
+
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
 
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@RentenNachrichtenDE"i]),
@@ -395,6 +398,7 @@ youtube.com##ytd-video-renderer:has(a[href*="/@DeutschlandderZukunft"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@DeutschlandderZukunft"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@DeutschlandderZukunft"i])
 
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^TV EXPERTE$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@TVEXPERTE"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@TVEXPERTE"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@TVEXPERTE"i]),
