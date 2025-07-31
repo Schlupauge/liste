@@ -330,16 +330,16 @@ youtube.com##ytd-video-renderer:has(a[href*="/@DrBerndBaumannMdB"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@DrBerndBaumannMdB"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@DrBerndBaumannMdB"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^C3 Adventures$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Souverän777"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Souverän777"i]),
-youtube.com##ytd-grid-video-renderer:has(a[href*="/@Souverän777u"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@Souverän777"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Souverän777"i])
 
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Souverän777"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Souverän777"i]),
-youtube.com##ytd-grid-video-renderer:has(a[href*="/@Souverän777u"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@Souverän777"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Souverän777"i])
 
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
@@ -374,7 +374,7 @@ youtube.com##ytd-compact-video-renderer:has(a[href*="/@AktuelleStunde-h3s"i])
 
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@AuroraFreyaOfficial"i]),
-youtube.com##ytd-video-renderer:has(aa[href*="/@AuroraFreyaOfficial"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@AuroraFreyaOfficial"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@AuroraFreyaOfficial"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@AuroraFreyaOfficial"i])
 
@@ -505,7 +505,8 @@ youtube.com##ytd-video-renderer:has(a[href*="/@schwarzerkanal-III"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@schwarzerkanal-III"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@schwarzerkanal-III"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##[href*="/@PolitANALYSE"i]:upward(ytd-video-renderer, ytd-rich-item-renderer, ytd-grid-video-renderer, ytd-compact-video-renderer)
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^PolitANALYSE$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitANALYSE"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@PolitANALYSE"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitANALYSE"i]),
