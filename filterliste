@@ -240,7 +240,7 @@ youtube.com##ytd-video-renderer:has(a[href*="/Kraft der Entscheidung"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/Kraft der Entscheidung"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/Kraft der Entscheidung"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^(unscripted) touch$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^unscripted3am$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@StrandhausTalk"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@StrandhausTalk"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@StrandhausTalk"i]),
