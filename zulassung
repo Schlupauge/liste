@@ -1,0 +1,8 @@
+! Plex Allowlist
+plex.tv
+*.plex.tv
+plex.direct
+*.plex.direct
+cloud.plex.tv
+metadata.provider.plex.tv
+! Ende Plex Allowlist
