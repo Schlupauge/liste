@@ -12,6 +12,12 @@ youtube.com##ytd-video-renderer:has(a#video-title:matches-case(/Weidel|Alice Wei
 
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
+youtube.com##ytd-video-renderer:has(a[href*="/@wtfnewsde"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@wtfnewsde"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@wtfnewsde"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@wtfnewsde"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@wtfnewsde"i])
+
 youtube.com##ytd-video-renderer:has(a[href*="/@OjeDE"i])
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@OjeDE"i])
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@OjeDE"i])
