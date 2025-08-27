@@ -7,11 +7,74 @@
 ! License: https://github.com/gijsdev/ublock-hide-yt-shorts/blob/master/LICENSE.md
 ! ░░ YouTube – Blockiere unerwünschte Kanäle per @Handle (Startseite, Suche, Grid, Sidebar) ░░
 
-! ▶︎ EIN Filterblock für Suche (/Weidel|AfD|Trump/ → regulärer Ausdruck für mehrere Begriffe (durch | getrennt).)
-youtube.com##ytd-video-renderer:has(a#video-title:matches-case(/Weidel|Alice Weidel|AfD|köppel|TV EXPERTE/))
-
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Die letzte Wahrheit$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@DieletzteWahrheit23"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@DieletzteWahrheit23"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@DieletzteWahrheit23"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@DieletzteWahrheit23"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@DieletzteWahrheit23"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Tageszeitung Heute$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@heuteat"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@heuteat"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@heuteat"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@heuteat"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@heuteat"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^GeoBlick$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@GeoBlick-yt"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@GeoBlick-yt"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@GeoBlick-yt"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@GeoBlick-yt"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@GeoBlick-yt"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^GegenHartz$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@GegenHartzTV"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@GegenHartzTV"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@GegenHartzTV"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@GegenHartzTV"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@GegenHartzTV"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Drehmoment und Innovation$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@DrehmomentundInnovation"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@DrehmomentundInnovation"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@DrehmomentundInnovation"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@DrehmomentundInnovation"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@DrehmomentundInnovation"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Kraft der Entscheidung$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@iuisalbertojones3209"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@iuisalbertojones3209"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@iuisalbertojones3209"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@iuisalbertojones3209"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@iuisalbertojones3209"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^AKTUELL Direkt$/))
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@AKTUELLDirekt01"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@AKTUELLDirekt01"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@AKTUELLDirekt01"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@AKTUELLDirekt01"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^AKTUELL Direkt$/))
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@AKTUELLDirekt01"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@AKTUELLDirekt01"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@AKTUELLDirekt01"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@AKTUELLDirekt01"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Unscripted Military$/))
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@UnscriptedMilitary"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@UnscriptedMilitary"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@UnscriptedMilitary"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@PatrUnscriptedMilitaryiotenEcho"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Patrioten Echo$/))
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@PatriotenEcho"i]),
+youtube.com##ytd-video-renderer:has(a[href*="/@PatriotenEcho"i]),
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@PatriotenEcho"i]),
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@PatriotenEcho"i])
+
 youtube.com##ytd-video-renderer:has(a[href*="/@DeutscherRentenratgeber-y4f"i])
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@DeutscherRentenratgeber-y4f"i])
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@DeutscherRentenratgeber-y4f"i])
@@ -66,6 +129,7 @@ youtube.com##ytd-grid-video-renderer:has(a[href*="/@AfDFraktionSachsenAnhalt"i])
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@AfDFraktionSachsenAnhalt"i])
 youtube.com##ytd-channel-renderer:has(a[href*="/@AfDFraktionSachsenAnhalt"i])
 
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Aus Liebe Zu Deutschland$/))
 youtube.com##ytd-video-renderer:has(a[href*="/@AusLiebeZuDeutschland"i])
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@AusLiebeZuDeutschland"i])
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@AusLiebeZuDeutschland"i])
@@ -84,6 +148,7 @@ youtube.com##ytd-grid-video-renderer:has(a[href*="/@blickpunkt-de"i])
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@blickpunkt-de"i])
 youtube.com##ytd-channel-renderer:has(a[href*="/@blickpunkt-de"i])
 
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^ZensurFrei$/))
 youtube.com##ytd-video-renderer:has(a[href*="/@ZensurFrei"i])
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@ZensurFrei"i])
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@ZensurFrei"i])
@@ -102,6 +167,7 @@ youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitikVomFeinsten"i])
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitikVomFeinsten"i])
 youtube.com##ytd-channel-renderer:has(a[href*="/@PolitikVomFeinsten"i])
 
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Politik Deutschland Heute$/))
 youtube.com##ytd-video-renderer:has(a[href*="/@PolitikDeutschlandHeute"i])
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitikDeutschlandHeute"i])
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitikDeutschlandHeute"i])
@@ -133,7 +199,6 @@ youtube.com##ytd-compact-video-renderer:has(a[href*="/@TagesWende"i])
 youtube.com##ytd-channel-renderer:has(a[href*="/@TagesWende"i])
 
 youtube.com##ytd-video-renderer:has(a[href*="/@DeutscheDemokratie"i])
-youtube.com##ytd-video-renderer:has(a[href*="/@DeutscheDemokratie"i])
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@DeutscheDemokratie"i])
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@DeutscheDemokratie"i])
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@DeutscheDemokratie"i])
@@ -158,645 +223,638 @@ youtube.com##ytd-grid-video-renderer:has(a[href*="/@BLACKOUTDeutschland"i])
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@BLACKOUTDeutschland"i])
 youtube.com##ytd-channel-renderer:has(a[href*="/@BLACKOUTDeutschland"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Gereon Bollmann$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(Gereon Bollmann))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@gereonbollmannmdb"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@gereonbollmannmdb"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@gereonbollmannmdb"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@gereonbollmannmdb"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Gereon Bollmann$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Gereon Bollmann$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@gereonbollmannmdb"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@gereonbollmannmdb"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@gereonbollmannmdb"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@gereonbollmannmdb"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Politik Aktuell Deutschland$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Politik Aktuell Deutschland$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Politik.Aktuell.Deutschlan-q5u"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Politik.Aktuell.Deutschlan-q5u"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Politik.Aktuell.Deutschlan-q5u"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Politik.Aktuell.Deutschlan-q5u"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^HIÊN$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^HIÊN$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@hien154k"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@hien154k"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@hien154k"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@hien154k"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Renten Nachrichten DE$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Renten Nachrichten DE$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@RentenNachrichtenDE"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@RentenNachrichtenDE"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@RentenNachrichtenDE"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@RentenNachrichtenDE"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Deutschland Nachrichten$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Deutschland Nachrichten$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@DeutschlandNachrichten-y9d"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@DeutschlandNachrichten-y9d"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@DeutschlandNachrichten-y9d"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@DeutschlandNachrichten-y9d"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Bürgerrechte 66$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Bürgerrechte 66$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Bürgerrechte66"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Bürgerrechte66"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Bürgerrechte66"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Bürgerrechte66"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Reinhard Schulz$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Reinhard Schulz$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@videografreinhard"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@videografreinhard"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@videografreinhard"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@videografreinhard"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^The Savior$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^The Savior$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@TheSavior.2024"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@TheSavior.2024"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@TheSavior.2024"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@TheSavior.2024"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
-youtube.com##ytd-rich-item-renderer:has(a[href*="/@theamdispatch"i]),
-youtube.com##ytd-video-renderer:has(a[href*="/@theamdispatch"i]),
-youtube.com##ytd-grid-video-renderer:has(a[href*="/@theamdispatch"i]),
-youtube.com##ytd-compact-video-renderer:has(a[href*="/@theamdispatch"i])
-
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Michael Heaver auf Deutsch$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Michael Heaver auf Deutsch$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@MichaelHeaverYouTube_de"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@MichaelHeaverYouTube_de"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@MichaelHeaverYouTube_de"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@MichaelHeaverYouTube_de"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Andi wacht auf!$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Andi wacht auf!$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@AndisAlltag"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@AndisAlltag"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@AndisAlltag"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@AndisAlltag"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Nicole Höchst$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Nicole Höchst$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@NicoleHöchstAfD"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@NicoleHöchstAfD"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@NicoleHöchstAfD"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@NicoleHöchstAfD"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Schüller fragt nach!$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Schüller fragt nach!$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Schüllerfragtnach"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Schüllerfragtnach"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Schüllerfragtnach"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Schüllerfragtnach"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Hinterfragt!$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Hinterfragt!$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@HinterfragtDE"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@HinterfragtDE"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@HinterfragtDE"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@HinterfragtDE"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Fred Flattermann$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Fred Flattermann$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@FredFlattermann"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@FredFlattermann"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@FredFlattermann"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@FredFlattermann"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/Sofort News"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/Sofort News"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/Sofort News"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/Sofort News"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^SachsenKanal Sender Freies Sachsen$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^SachsenKanal Sender Freies Sachsen$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@sachsenkanal"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@sachsenkanal"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@sachsenkanal"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@sachsenkanal"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Weichreite TV$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Weichreite TV$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Weichreite"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Weichreite"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Weichreite"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Weichreite"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Kontrafunk - Die Stimme der Vernunft$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Kontrafunk - Die Stimme der Vernunft$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Kontrafunkradio"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Kontrafunkradio"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Kontrafunkradio"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Kontrafunkradio"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^OE24.TV$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^OE24.TV$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@oe24TV"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@oe24TV"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@oe24TV"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@oe24TV"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Krautzone$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Krautzone$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Krautzone"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Krautzone"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Krautzone"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Krautzone"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Kronen Zeitung$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Kronen Zeitung$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@kronetv"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@kronetv"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@kronetv"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@kronetv"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^achse:ostwest$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^achse:ostwest$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@symmetriebrecher"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@symmetriebrecher"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@symmetriebrecher"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@symmetriebrecher"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Kanal Schnellroda$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Kanal Schnellroda$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@KanalSchnellroda3"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@KanalSchnellroda3"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@KanalSchnellroda3"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@KanalSchnellroda3"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^zweizigHugo$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^zweizigHugo$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@einzigHugo"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@einzigHugo"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@einzigHugo"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@einzigHugo"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^einzigHugo$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^einzigHugo$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@K1rtsch0"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@K1rtsch0"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@K1rtsch0"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@K1rtsch0"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^freiformation$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^freiformation$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@freiformation"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@freiformation"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@freiformation"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@freiformation"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^lets make money$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^lets make money$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@letsmakemoney"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@letsmakemoney"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@letsmakemoney"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@letsmakemoney"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@DeutscheSeniorennachrichten"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@DeutscheSeniorennachrichten"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@DeutscheSeniorennachrichten"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@DeutscheSeniorennachrichten"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Beatrix von Storch$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Beatrix von Storch$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@BeatrixvonStorch"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@BeatrixvonStorch"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@BeatrixvonStorch"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@BeatrixvonStorch"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Caspar David Friedrich$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Caspar David Friedrich$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@nitit6158"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@nitit6158"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@nitit6158"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@nitit6158"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Finanzwelten$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Finanzwelten$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@finanzwelten"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@finanzwelten"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@finanzwelten"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@finanzwelten"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^ErzählWelt$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^ErzählWelt$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Erzähl-Welt"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Erzähl-Welt"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Erzähl-Welt"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Erzähl-Welt"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^KanzlerKanal$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^KanzlerKanal$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@KanzlerKanal"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@KanzlerKanal"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@KanzlerKanal"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@KanzlerKanal"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^AfDBamberg$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^AfDBamberg$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@AfDBamberg"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@AfDBamberg"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@AfDBamberg"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@AfDBamberg"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Rüdiger Klos MdL, AfD Baden-Württemberg$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Rüdiger Klos MdL, AfD Baden-Württemberg$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@ruedigerklos_MdL"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@ruedigerklos_MdL"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@ruedigerklos_MdL"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@ruedigerklos_MdL"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Kraft der Entscheidung$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Kraft der Entscheidung$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/Kraft der Entscheidung"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/Kraft der Entscheidung"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/Kraft der Entscheidung"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/Kraft der Entscheidung"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^unscripted3am$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^unscripted3am$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@StrandhausTalk"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@StrandhausTalk"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@StrandhausTalk"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@StrandhausTalk"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Kraft der Entscheidung$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Kraft der Entscheidung$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@iuisalbertojones3209"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@iuisalbertojones3209"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@iuisalbertojones3209"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@iuisalbertojones3209"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^En Kısa Pratik Tarifler$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^En Kısa Pratik Tarifler$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@EnKsaPratikTarifler"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@EnKsaPratikTarifler"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@EnKsaPratikTarifler"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@EnKsaPratikTarifler"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Sofort News$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Sofort News$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@ireloaded9216"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@ireloaded9216"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@ireloaded9216"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@ireloaded9216"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Der Bundesblick$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Der Bundesblick$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@DerBundesblick"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@DerBundesblick"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@DerBundesblick"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@DerBundesblick"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^lets make money$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^lets make money$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@letsmakemoney"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@letsmakemoney"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@letsmakemoney"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@letsmakemoney"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Hapag-Lloyd$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Hapag-Lloyd$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Hapag-Lloyd-n1u"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Hapag-Lloyd-n1u"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Hapag-Lloyd-n1u"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Hapag-Lloyd-n1u"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^Politischer Ticker Deutschland$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Politischer Ticker Deutschland$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitischerTickerDeutschland"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@PolitischerTickerDeutschland"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitischerTickerDeutschland"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitischerTickerDeutschland"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^PolitikNow$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^PolitikNow$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitikNowDE"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@PolitikNowDE"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitikNowDE"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitikNowDE"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@nyusuch"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@nyusuch"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@nyusuch"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@nyusuch"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Politikagent"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Politikagent"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Politikagent"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Politikagent"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@antonbaronmdl3384"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@antonbaronmdl3384"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@antonbaronmdl3384"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@antonbaronmdl3384"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Kunst_und_Kultur"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Kunst_und_Kultur"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Kunst_und_Kultur"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Kunst_und_Kultur"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@pugno"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@pugno"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@pugno"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@pugno"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@pboehringer"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@pboehringer"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@pboehringer"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@pboehringer"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@MMnewsTV"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@MMnewsTV"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@MMnewsTV"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@MMnewsTV"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Krall_und_Bubeck"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Krall_und_Bubeck"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Krall_und_Bubeck"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Krall_und_Bubeck"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Jerykooriginal"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Jerykooriginal"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Jerykooriginal"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Jerykooriginal"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@DrBerndBaumannMdB"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@DrBerndBaumannMdB"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@DrBerndBaumannMdB"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@DrBerndBaumannMdB"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^C3 Adventures$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^C3 Adventures$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Souverän777"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Souverän777"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Souverän777"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Souverän777"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Souverän777"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Souverän777"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Souverän777"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Souverän777"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@JesusBreathe"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@JesusBreathe"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@JesusBreathe"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@JesusBreathe"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@SecularTalk"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@SecularTalk"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@SecularTalk"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@SecularTalk"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@elenaroonmdl"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@elenaroonmdl"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@elenaroonmdl"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@elenaroonmdl"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/Aktuelle Stunde"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/Aktuelle Stunde"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/Aktuelle Stunde"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/Aktuelle Stunde"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@AktuelleStunde-h3s"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@AktuelleStunde-h3s"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@AktuelleStunde-h3s"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@AktuelleStunde-h3s"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@AuroraFreyaOfficial"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@AuroraFreyaOfficial"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@AuroraFreyaOfficial"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@AuroraFreyaOfficial"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Berlin360"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Berlin360"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Berlin360"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Berlin360i"])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@SolgaTV"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@SolgaTV"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@SolgaTV"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@SolgaTV"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@WahrPolitik"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@WahrPolitik"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@WahrPolitik"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@WahrPolitik"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@AfDBayernTV1"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@AfDBayernTV1"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@AfDBayernTV1"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@AfDBayernTV1"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@AfDBayernTV1"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@AfDBayernTV1"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@AfDBayernTV1"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@AfDBayernTV1"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@fakten-klar"i])
 youtube.com##ytd-video-renderer:has(a[href*="/@fakten-klar"i])
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@fakten-klar"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@fakten-klar"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@deutschlandheute-y7w"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@deutschlandheute-y7w"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@deutschlandheute-y7w"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@deutschlandheute-y7wi"])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@elenaroonmdl"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@elenaroonmdl"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@elenaroonmdl"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@elenaroonmdl"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@klartextwinkler"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@klartextwinkler"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@klartextwinkler"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@klartextwinkler"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@klartext-gmbh"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@klartext-gmbh"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@klartext-gmbh"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@klartext-gmbh"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitikWelle"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@PolitikWelle"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitikWelle"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitikWelle"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@KrisenReport"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@KrisenReport"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@KrisenReport"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@KrisenReport"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@KrisenReport"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@KrisenReport"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@KrisenReport"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@KrisenReport"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@BlitzTickerAktuel"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@BlitzTickerAktuel"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@BlitzTickerAktuel"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@BlitzTickerAktuel"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@liberaleTendenz"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@liberaleTendenz"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@liberaleTendenz"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@liberaleTendenz"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@DeutschlandderZukunft"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@DeutschlandderZukunft"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@DeutschlandderZukunft"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@DeutschlandderZukunft"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^TV EXPERTE$/))
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^TV EXPERTE$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^TV EXPERTE$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@TVEXPERTE"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@TVEXPERTE"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@TVEXPERTE"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@TVEXPERTE"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@DeutschlandKontrovers"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@DeutschlandKontrovers"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@DeutschlandKontrovers"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@DeutschlandKontrovers"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@TagesFokus"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@TagesFokus"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@TagesFokus"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@TagesFokus"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Andimacht1"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Andimacht1"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Andimacht1"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Andimacht1"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@schwarzerkanal-III"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@schwarzerkanal-III"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@schwarzerkanal-III"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@schwarzerkanal-III"i])
 
 youtube.com##[href*="/@PolitANALYSE"i]:upward(ytd-video-renderer, ytd-rich-item-renderer, ytd-grid-video-renderer, ytd-compact-video-renderer)
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^PolitANALYSE$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^PolitANALYSE$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitANALYSE"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@PolitANALYSE"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitANALYSE"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitANALYSE"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Desert93"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Desert93"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Desert93"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Desert93"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@KrisenReport"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@KrisenReport"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@KrisenReport"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@KrisenReport"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@StimmenausderPolitik"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@StimmenausderPolitik"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@StimmenausderPolitik"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@StimmenausderPolitik"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Reloaded$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Kingagamemnon"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Kingagamemnon"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Kingagamemnon"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Kingagamemnon"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Michael_Meyen"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Michael_Meyen"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Michael_Meyen"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Michael_Meyen"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@politik_durchdacht"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@politik_durchdacht"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@politik_durchdacht"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@politik_durchdacht"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@GermanyAktuell"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@GermanyAktuell"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@GermanyAktuell"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@GermanyAktuell"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@salatwaffel7856"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@salatwaffel7856"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@salatwaffel7856"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@salatwaffel7856"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@PatriotischerKompass"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@PatriotischerKompass"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@PatriotischerKompass"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@PatriotischerKompass"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@RussianspinDeutsch"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@RussianspinDeutsch"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@RussianspinDeutsch"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@RussianspinDeutsch"i]),
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@jurgenelsasser6713"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@jurgenelsasser6713"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@jurgenelsasser6713"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@jurgenelsasser6713"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@newsde"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@newsde"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@newsde"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@newsde"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^WELT Nachrichtensender$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^WELT Nachrichtensender$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@WELTVideoTV"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@WELTVideoTV"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@WELTVideoTV"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@WELTVideoTV"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^WELT Netzreporter$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^WELT Netzreporter$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@DieNetzreporter"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@DieNetzreporter"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@DieNetzreporter"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@DieNetzreporter"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@WiederStark"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@WiederStark"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@WiederStark"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@WiederStark"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@WPatriotenEcho"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@WPatriotenEcho"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@WPatriotenEcho"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@WPatriotenEcho"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@focusonline"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@focusonline"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@focusonline"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@focusonline"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@WeidelWunderland"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@WeidelWunderland"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@WeidelWunderland"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@WeidelWunderland"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitikMachtGeld"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@PolitikMachtGeld"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitikMachtGeld"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitikMachtGeld"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:matches(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@TriumphDeutschland-y3i"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@TriumphDeutschland-y3i"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@TriumphDeutschland-y3i"i]),
