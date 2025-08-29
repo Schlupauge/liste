@@ -16,6 +16,13 @@ youtube.com##ytd-grid-video-renderer:has(a[href*="/@Politikversagen"i])
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Politikversagen"i])
 youtube.com##ytd-channel-renderer:has(a[href*="/@Politikversagen"i])
 
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Politikversagen$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@Politikversagen"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@Politikversagen"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@Politikversagen"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@Politikversagen"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@Politikversagen"i])
+
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^SkyFire$/))
 youtube.com##ytd-video-renderer:has(a[href*="/@SkyFire_DE"i])
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@SkyFire_DE"i])
@@ -389,6 +396,7 @@ youtube.com##ytd-grid-video-renderer:has(a[href*="/@Weichreite"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@Weichreite"i])
 
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Kontrafunk - Die Stimme der Vernunft$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Winters Woche$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@Kontrafunkradio"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@Kontrafunkradio"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@Kontrafunkradio"i]),
