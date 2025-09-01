@@ -9,6 +9,41 @@
 
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^AfD-Fraktion Bundestag$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@AfDFraktionimBundestag"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@AfDFraktionimBundestag"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@AfDFraktionimBundestag"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@AfDFraktionimBundestag"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@AfDFraktionimBundestag"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^PolitikmitKopf$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@PolitikmitKopf"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitikmitKopf"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitikmitKopf"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitikmitKopf"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@PolitikmitKopf"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^AfD-Videos$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@AfD-Videos"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@AfD-Videos"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@AfD-Videos"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@AfD-Videos"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@AfD-Videos"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^AfD-Fraktion Sachsen-Anhalt$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@AfDFraktionSachsenAnhalt"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@AfDFraktionSachsenAnhalt"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@AfDFraktionSachsenAnhalt"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@AfDFraktionSachsenAnhalt"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@AfDFraktionSachsenAnhalt"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Maiks Meinung$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@maiksmeinung"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@maiksmeinung"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@maiksmeinung"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@maiksmeinung"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@maiksmeinung"i])
+
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^BerlinMorgen$/))
 youtube.com##ytd-video-renderer:has(a[href*="/@BerlinMorgen"i])
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@BerlinMorgen"i])
