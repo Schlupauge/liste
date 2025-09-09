@@ -9,6 +9,21 @@
 
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Zeitgeist Ticker$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@ZeitgeistTicker"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@ZeitgeistTicker"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@ZeitgeistTicker"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@ZeitgeistTicker"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@ZeitgeistTicker"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Aktien und Investieren$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@AktienundInvestieren"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@AktienundInvestieren"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@AktienundInvestieren"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@AktienundInvestieren"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@AktienundInvestieren"i])
+
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^RA Alexander Boos$/))
 youtube.com##ytd-video-renderer:has(a[href*="/Der_Anwalt_Boos"i])
 youtube.com##ytd-rich-item-renderer:has(a[href*="Der_Anwalt_Boos"i])
