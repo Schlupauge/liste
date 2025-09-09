@@ -9,12 +9,47 @@
 
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Sendestörung$/))
-youtube.com##ytd-video-renderer:has(a[href*="/@Sendestörung"i])
-youtube.com##ytd-rich-item-renderer:has(a[href*="/@Sendestörung"i])
-youtube.com##ytd-grid-video-renderer:has(a[href*="/@Sendestörung"i])
-youtube.com##ytd-compact-video-renderer:has(a[href*="/@Sendestörung"i])
-youtube.com##ytd-channel-renderer:has(a[href*="/@Sendestörung"i])
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^LGBTQ$/))
+youtube.com##ytd-video-renderer:has(a[href*="/LGBTQ"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="LGBTQ"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/LGBTQ"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/LGBTQ"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/LGBTQ"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Die Schule Bonhoeffers$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@DieSchuleBonhoeffers"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@DieSchuleBonhoeffers"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@DieSchuleBonhoeffers"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@DieSchuleBonhoeffers"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@DieSchuleBonhoeffers"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Hinter der Wahrheit$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@MapleBrief-o3b"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@MapleBrief-o3b"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@MapleBrief-o3b"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@MapleBrief-o3b"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@MapleBrief-o3b"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^CSD$/))
+youtube.com##ytd-video-renderer:has(a[href*="/CSD"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/CSD"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/CSD"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/CSD"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/CSD"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^LGBTQ$/))
+youtube.com##ytd-video-renderer:has(a[href*="/LGBTQ"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/LGBTQ"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/LGBTQ"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/LGBTQ"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/LGBTQ"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Neue Perspektive$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@NeuePerspektive-p5j"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@NeuePerspektive-p5j"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@NeuePerspektive-p5j"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@NeuePerspektive-p5j"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@NeuePerspektive-p5j"i])
 
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Open Doors Deutschland$/))
 youtube.com##ytd-video-renderer:has(a[href*="/@OpenDoorsDE"i])
@@ -831,13 +866,13 @@ youtube.com##ytd-video-renderer:has(a[href*="/@SolgaTV"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@SolgaTV"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@SolgaTV"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^WahrPolitik$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@WahrPolitik"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@WahrPolitik"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@WahrPolitik"i]),
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@WahrPolitik"i])
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^1111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^WahrPolitik$/))
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@AfDBayernTV1"i]),
 youtube.com##ytd-video-renderer:has(a[href*="/@AfDBayernTV1"i]),
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@AfDBayernTV1"i]),
