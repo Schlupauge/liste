@@ -9,6 +9,40 @@
 
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Politik ohne Filter$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@PolitikohneFilter"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitikohneFilter"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitikohneFilter"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitikohneFilter"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@PolitikohneFilter"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Politik ohne Filter$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@PolitikohneFilter"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitikohneFilter"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitikohneFilter"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitikohneFilter"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@PolitikohneFilter"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Deutsche Redaktion$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@DeutscheRedaktion"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@DeutscheRedaktion"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@DeutscheRedaktion"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@DeutscheRedaktion"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@DeutscheRedaktion"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Morgen Echo$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@MorgenEcho2025"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@MorgenEcho2025"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@MorgenEcho2025"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@MorgenEcho2025"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@MorgenEcho2025"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Politik Klartext$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@PolitikKlartext88"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitikKlartext88"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitikKlartext88"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitikKlartext88"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@PolitikKlartext88"i])
 
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Zeitgeist Ticker$/))
 youtube.com##ytd-video-renderer:has(a[href*="/@ZeitgeistTicker"i])
