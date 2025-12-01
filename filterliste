@@ -1,7 +1,7 @@
 ! Title: Hide YouTube Trash
 ! Description: Hide all traces of YouTube Trash videos on YouTube
 ! Version: 1.10.0
-! Last modified: 2025-11-23 13:13
+! Last modified: 2025-12-01 20:14
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/gijsdev/ublock-hide-yt-shorts
 ! License: https://github.com/gijsdev/ublock-hide-yt-shorts/blob/master/LICENSE.md
@@ -9,6 +9,55 @@
 
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Kay Gottschalk, MdB$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@KayGottschalkMdB"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@KayGottschalkMdB"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@KayGottschalkMdB"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@KayGottschalkMdB"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@KayGottschalkMdB"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^FLÜSTERN$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@FlüsternDE"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@FlüsternDE"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@FlüsternDE"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@FlüsternDE"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@FlüsternDE"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^MrGlobe$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@Kmrglobe_"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@mrglobe_"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@Kmrglobe_"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@mrglobe_"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@mrglobe_"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Mein Kriminaltagebuch$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@kriminaltagebuch"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@kriminaltagebuch"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@kriminaltagebuch"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@kriminaltagebuch"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@kriminaltagebuch"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^GEZwungen zur Wahrheit$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@GEZwungenzurWahrheit"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@GEZwungenzurWahrheit"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@GEZwungenzurWahrheit"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@GEZwungenzurWahrheit"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@GEZwungenzurWahrheit"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^NTD Channel$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@ANTDChannel-g4t"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@NTDChannel-g4t"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@NTDChannel-g4t"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@NTDChannel-g4t"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@NTDChannel-g4t"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Stimme der Zeit$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@StimmederZeit-r8q"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@StimmederZeit-r8q"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@StimmederZeit-r8q"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@StimmederZeit-r8q"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@StimmederZeit-r8q"i])
+
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Atlas Initiative für Recht und Freiheit$/))
 youtube.com##ytd-video-renderer:has(a[href*="/@ATLAS_Initiative"i])
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@ATLAS_Initiative"i])
