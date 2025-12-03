@@ -1,14 +1,134 @@
 ! Title: Hide YouTube Trash
 ! Description: Hide all traces of YouTube Trash videos on YouTube
 ! Version: 1.10.0
-! Last modified: 2025-12-01 20:14
+! Last modified: 2025-12-03 20:14
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://github.com/gijsdev/ublock-hide-yt-shorts
 ! License: https://github.com/gijsdev/ublock-hide-yt-shorts/blob/master/LICENSE.md
 ! ░░ YouTube – Blockiere unerwünschte Kanäle per @Handle (Startseite, Suche, Grid, Sidebar) ░░
 
+! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Wort, 4 Bereiche)
+
+youtube.com##ytd-video-renderer:has(#video-title:matches-text(/afd/i))
+youtube.com##ytd-rich-item-renderer:has(#video-title:matches-text(/afd/i))
+youtube.com##ytd-grid-video-renderer:has(#video-title:matches-text(/afd/i))
+youtube.com##ytd-compact-video-renderer:has(#video-title:matches-text(/afd/i))
+youtube.com##ytd-channel-renderer:has(#video-title:matches-text(/afd/i))
+
+youtube.com##ytd-video-renderer:has(#video-title:matches-text(/merz/i))
+youtube.com##ytd-rich-item-renderer:has(#video-title:matches-text(/merz/i))
+youtube.com##ytd-grid-video-renderer:has(#video-title:matches-text(/merz/i))
+youtube.com##ytd-compact-video-renderer:has(#video-title:matches-text(/merz/i))
+youtube.com##ytd-channel-renderer:has(#video-title:matches-text(/merz/i))
+
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Weltgeschehen im Fokus$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@NeuesteNachrichten2"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@NeuesteNachrichten2"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@NeuesteNachrichten2"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@NeuesteNachrichten2"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@NeuesteNachrichten2"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Aktualisieren$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@WeltgeschehenImFokus-h3u"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@WeltgeschehenImFokus-h3u"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@WeltgeschehenImFokus-h3u"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@WeltgeschehenImFokus-h3u"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@WeltgeschehenImFokus-h3u"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Der Machtkompass$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@DerMachtkompass"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@DerMachtkompass"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@DerMachtkompass"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@DerMachtkompass"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@DerMachtkompass"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^DER DEUTSCHE BERICHT$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@DERDEUTSCHEBERICHT-z8p"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@DERDEUTSCHEBERICHT-z8p"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@DERDEUTSCHEBERICHT-z8p"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@DERDEUTSCHEBERICHT-z8p"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@DERDEUTSCHEBERICHT-z8p"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Nordkompass$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@Nordkompass-m7o"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@Nordkompass-m7o"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@Nordkompass-m7o"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@Nordkompass-m7o"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@Nordkompass-m7o"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Politik im Gespräch$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@PolitikimGespräch-u6x"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitikimGespräch-u6x"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitikimGespräch-u6x"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitikimGespräch-u6x"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@PolitikimGespräch-u6x"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Warfare Expedition$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@WarfareExplained-v9o"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@WarfareExplained-v9o"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@WarfareExplained-v9o"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@WarfareExplained-v9o"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@WarfareExplained-v9o"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Politischer Sturm$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@PolitischerSturm"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitischerSturm"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitischerSturm"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitischerSturm"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@PolitischerSturm"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Aktualisieren$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@ren"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@ren"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@ren"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@ren-1"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@ren"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Politischer Rundblick$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@PolitischerRundblick"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitischerRundblick"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitischerRundblick"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitischerRundblick"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@PolitischerRundblick"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Global Klartext$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@GlobalKlartext.86"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@GlobalKlartext.86"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@GlobalKlartext.86"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@GlobalKlartext.86"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@GlobalKlartext.86"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Zeitgeist Politik$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@ZeitgeistPolitik"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@ZeitgeistPolitik"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@ZeitgeistPolitik"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@ZeitgeistPolitik"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@ZeitgeistPolitik"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Politik kompakt$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@60sekundenpolitik"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@60sekundenpolitik"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@60sekundenpolitik"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@60sekundenpolitik"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@60sekundenpolitik"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Blitz Aktuell$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@BlitzAktuell"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@BlitzAktuell"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@BlitzAktuell"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@BlitzAktuell"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@BlitzAktuell"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Deutschland Foku$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@DeutschlandFoku-1"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@DeutschlandFoku-1"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@DeutschlandFoku-1"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@DeutschlandFoku-1"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@DeutschlandFoku-1"i])
+
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Renten & Senioren Aktualisieren$/))
 youtube.com##ytd-video-renderer:has(a[href*="/@rentennews-1"i])
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@rentennews-1"i])
