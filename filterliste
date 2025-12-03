@@ -8,54 +8,53 @@
 ! ░░ YouTube – Blockiere unerwünschte Kanäle per @Handle (Startseite, Suche, Grid, Sidebar) ░░
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Wort, 4 Bereiche)
-youtube.com##ytd-video-renderer:has(:matches-text(/EILMELDUNG! [\W_]*/i))
-youtube.com##ytd-rich-item-renderer:has(:matches-text(/EILMELDUNG! [\W_]*/i))
-youtube.com##ytd-grid-video-renderer:has(:matches-text(/EILMELDUNG! [\W_]*/i))
-youtube.com##ytd-compact-video-renderer:has(:matches-text(/EILMELDUNG! [\W_]*/i))
-youtube.com##ytd-reel-item-renderer:has(:matches-text(/EILMELDUNG! [\W_]*/i))
+youtube.com##ytd-rich-item-renderer:has(yt-formatted-string[aria-label*=" EILMELDUNG " i])
+youtube.com##ytd-video-renderer:has(yt-formatted-string[aria-label*=" EILMELDUNG " i])
+youtube.com##a.ytp-videowall-still[aria-label*=" EILMELDUNG " i]
+youtube.com##a.ytp-videowall-still[aria-label*=" EILMELDUNG " i]
+youtube.com##ytd-compact-video-renderer:has(span[aria-label*=" EILMELDUNG " i])
 
-youtube.com##ytd-video-renderer:has(:matches-text(/Minuten[\W_]*/i))
-youtube.com##ytd-rich-item-renderer:has(:matches-text(/Minuten[\W_]*/i))
-youtube.com##ytd-grid-video-renderer:has(:matches-text(/Minuten[\W_]*/i))
-youtube.com##ytd-compact-video-renderer:has(:matches-text(/Minuten[\W_]*/i))
-youtube.com##ytd-reel-item-renderer:has(:matches-text(/Minuten[\W_]*/i))
+youtube.com##ytd-rich-item-renderer:has(yt-formatted-string[aria-label*=" Minuten " i])
+youtube.com##ytd-video-renderer:has(yt-formatted-string[aria-label*=" Minuten " i])
+youtube.com##a.ytp-videowall-still[aria-label*=" Minuten " i]
+youtube.com##a.ytp-videowall-still[aria-label*=" Minuten " i]
+youtube.com##ytd-compact-video-renderer:has(span[aria-label*=" Minuten " i])
 
-youtube.com##ytd-video-renderer:has(:matches-text(/schock[\W_]*/i))
-youtube.com##ytd-rich-item-renderer:has(:matches-text(/schock[\W_]*/i))
-youtube.com##ytd-grid-video-renderer:has(:matches-text(/schock[\W_]*/i))
-youtube.com##ytd-compact-video-renderer:has(:matches-text(/schock[\W_]*/i))
-youtube.com##ytd-reel-item-renderer:has(:matches-text(/schock[\W_]*/i))
+youtube.com##ytd-rich-item-renderer:has(yt-formatted-string[aria-label*=" schock " i])
+youtube.com##ytd-video-renderer:has(yt-formatted-string[aria-label*=" schock " i])
+youtube.com##a.ytp-videowall-still[aria-label*=" schock " i]
+youtube.com##a.ytp-videowall-still[aria-label*=" schock " i]
+youtube.com##ytd-compact-video-renderer:has(span[aria-label*=" schock " i])
 
-youtube.com##ytd-video-renderer:has(:matches-text(/panik[\W_]*/i))
-youtube.com##ytd-rich-item-renderer:has(:matches-text(/panik[\W_]*/i))
-youtube.com##ytd-grid-video-renderer:has(:matches-text(/panik[\W_]*/i))
-youtube.com##ytd-compact-video-renderer:has(:matches-text(/panik[\W_]*/i))
-youtube.com##ytd-reel-item-renderer:has(:matches-text(/panik[\W_]*/i))
+youtube.com##ytd-rich-item-renderer:has(yt-formatted-string[aria-label*=" panik " i])
+youtube.com##ytd-video-renderer:has(yt-formatted-string[aria-label*=" panik " i])
+youtube.com##a.ytp-videowall-still[aria-label*=" panik " i]
+youtube.com##a.ytp-videowall-still[aria-label*=" panik " i]
+youtube.com##ytd-compact-video-renderer:has(span[aria-label*=" panik " i])
 
-youtube.com##ytd-video-renderer:has(:matches-text(/regierung[\W_]*/i))
-youtube.com##ytd-rich-item-renderer:has(:matches-text(/regierung[\W_]*/i))
-youtube.com##ytd-grid-video-renderer:has(:matches-text(/regierung[\W_]*/i))
-youtube.com##ytd-compact-video-renderer:has(:matches-text(/regierung[\W_]*/i))
-youtube.com##ytd-reel-item-renderer:has(:matches-text(/regierung[\W_]*/i))
+youtube.com##ytd-rich-item-renderer:has(yt-formatted-string[aria-label*=" regierung " i])
+youtube.com##ytd-video-renderer:has(yt-formatted-string[aria-label*=" regierung " i])
+youtube.com##a.ytp-videowall-still[aria-label*=" regierung " i]
+youtube.com##a.ytp-videowall-still[aria-label*=" regierung " i]
+youtube.com##ytd-compact-video-renderer:has(span[aria-label*=" regierung " i])
 
-youtube.com##ytd-video-renderer:has(:matches-text(/EBEN[\W_]*/i))
-youtube.com##ytd-rich-item-renderer:has(:matches-text(/EBEN[\W_]*/i))
-youtube.com##ytd-grid-video-renderer:has(:matches-text(/EBEN[\W_]*/i))
-youtube.com##ytd-compact-video-renderer:has(:matches-text(/EBEN[\W_]*/i))
-youtube.com##ytd-reel-item-renderer:has(:matches-text(/EBEN[\W_]*/i))
+youtube.com##ytd-rich-item-renderer:has(yt-formatted-string[aria-label*=" EBEN " i])
+youtube.com##ytd-video-renderer:has(yt-formatted-string[aria-label*=" EBEN " i])
+youtube.com##a.ytp-videowall-still[aria-label*=" EBEN " i]
+youtube.com##a.ytp-videowall-still[aria-label*=" EBEN " i]
+youtube.com##ytd-compact-video-renderer:has(span[aria-label*=" EBEN " i])
 
-youtube.com##ytd-video-renderer:has(:matches-text(/afd[\W_]*/i))
-youtube.com##ytd-rich-item-renderer:has(:matches-text(/afd[\W_]*/i))
-youtube.com##ytd-grid-video-renderer:has(:matches-text(/afd[\W_]*/i))
-youtube.com##ytd-compact-video-renderer:has(:matches-text(/afd[\W_]*/i))
-youtube.com##ytd-reel-item-renderer:has(:matches-text(/afd[\W_]*/i))
+youtube.com##ytd-rich-item-renderer:has(yt-formatted-string[aria-label*=" afd " i])
+youtube.com##ytd-video-renderer:has(yt-formatted-string[aria-label*=" afd " i])
+youtube.com##a.ytp-videowall-still[aria-label*=" afd " i]
+youtube.com##a.ytp-videowall-still[aria-label*=" afd " i]
+youtube.com##ytd-compact-video-renderer:has(span[aria-label*=" afd " i])
 
-youtube.com##ytd-video-renderer:has(:matches-text(/merz[\W_]*/i))
-youtube.com##ytd-rich-item-renderer:has(:matches-text(/merz[\W_]*/i))
-youtube.com##ytd-grid-video-renderer:has(:matches-text(/merz[\W_]*/i))
-youtube.com##ytd-compact-video-renderer:has(:matches-text(/merz[\W_]*/i))
-youtube.com##ytd-reel-item-renderer:has(:matches-text(/merz[\W_]*/i))
-
+youtube.com##ytd-rich-item-renderer:has(yt-formatted-string[aria-label*=" merz " i])
+youtube.com##ytd-video-renderer:has(yt-formatted-string[aria-label*=" merz " i])
+youtube.com##a.ytp-videowall-still[aria-label*=" merz " i]
+youtube.com##a.ytp-videowall-still[aria-label*=" merz " i]
+youtube.com##ytd-compact-video-renderer:has(span[aria-label*=" merz " i])
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
 
