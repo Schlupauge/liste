@@ -56,7 +56,11 @@ youtube.com##a.ytp-videowall-still[aria-label*=" merz " i]
 youtube.com##a.ytp-videowall-still[aria-label*=" merz " i]
 youtube.com##ytd-compact-video-renderer:has(span[aria-label*=" merz " i])
 
+youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has([aria-label="Members only"])
+youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has([aria-label="Members first"]) 
+
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
+
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Mark Randi$/))
 youtube.com##ytd-video-renderer:has(a[href*="/@markrandi2451"i])
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@markrandi2451"i])
