@@ -8,6 +8,11 @@
 ! ░░ YouTube – Blockiere unerwünschte Kanäle per @Handle (Startseite, Suche, Grid, Sidebar) ░░
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Wort, 4 Bereiche)
+youtube.com##ytd-video-renderer:has(:matches-text(/EILMELDUNG! [\W_]*/i))
+youtube.com##ytd-rich-item-renderer:has(:matches-text(/EILMELDUNG! [\W_]*/i))
+youtube.com##ytd-grid-video-renderer:has(:matches-text(/EILMELDUNG! [\W_]*/i))
+youtube.com##ytd-compact-video-renderer:has(:matches-text(/EILMELDUNG! [\W_]*/i))
+youtube.com##ytd-reel-item-renderer:has(:matches-text(/EILMELDUNG! [\W_]*/i))
 
 youtube.com##ytd-video-renderer:has(:matches-text(/Minuten[\W_]*/i))
 youtube.com##ytd-rich-item-renderer:has(:matches-text(/Minuten[\W_]*/i))
