@@ -26,6 +26,12 @@ youtube.com##a.ytp-videowall-still[aria-label*=" schock " i]
 youtube.com##a.ytp-videowall-still[aria-label*=" schock " i]
 youtube.com##ytd-compact-video-renderer:has(span[aria-label*=" schock " i])
 
+youtube.com##ytd-rich-item-renderer:has(yt-formatted-string[aria-label*=" schock! " i])
+youtube.com##ytd-video-renderer:has(yt-formatted-string[aria-label*=" schock! " i])
+youtube.com##a.ytp-videowall-still[aria-label*=" schock! " i]
+youtube.com##a.ytp-videowall-still[aria-label*=" schock! " i]
+youtube.com##ytd-compact-video-renderer:has(span[aria-label*=" schock! " i])
+
 youtube.com##ytd-rich-item-renderer:has(yt-formatted-string[aria-label*=" panik " i])
 youtube.com##ytd-video-renderer:has(yt-formatted-string[aria-label*=" panik " i])
 youtube.com##a.ytp-videowall-still[aria-label*=" panik " i]
@@ -58,6 +64,7 @@ youtube.com##ytd-compact-video-renderer:has(span[aria-label*=" merz " i])
 
 youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has([aria-label="Members only"])
 youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has([aria-label="Members first"]) 
+youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has([aria-label="Nur für Kanalmitglieder"]) 
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
 
