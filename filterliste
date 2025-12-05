@@ -13,6 +13,8 @@ youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(:is(#vid
 youtube.com###related :is(ytd-compact-video-renderer,yt-lockup-view-model):has(:is(#video-title,h3)[title~="afd"i])
 youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(:is(#video-title-link,h3)[title~="EILMELDUNG"i])
 youtube.com###related :is(ytd-compact-video-renderer,yt-lockup-view-model):has(:is(#video-title,h3)[title~="EILMELDUNG"i])
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(:is(#video-title-link,h3)[title~="EILMELDUNG!"i])
+youtube.com###related :is(ytd-compact-video-renderer,yt-lockup-view-model):has(:is(#video-title,h3)[title~="EILMELDUNG!"i])
 youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(:is(#video-title-link,h3)[title~="Minuten"i])
 youtube.com###related :is(ytd-compact-video-renderer,yt-lockup-view-model):has(:is(#video-title,h3)[title~="Minuten"i])
 youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(:is(#video-title-link,h3)[title~="schock"i])
@@ -25,6 +27,8 @@ youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(:is(#vid
 youtube.com###related :is(ytd-compact-video-renderer,yt-lockup-view-model):has(:is(#video-title,h3)[title~="eben"i])
 youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(:is(#video-title-link,h3)[title~="weidel"i])
 youtube.com###related :is(ytd-compact-video-renderer,yt-lockup-view-model):has(:is(#video-title,h3)[title~="weidel"i])
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(:is(#video-title-link,h3)[title~="alice"i])
+youtube.com###related :is(ytd-compact-video-renderer,yt-lockup-view-model):has(:is(#video-title,h3)[title~="alice"i])
 
 youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has([aria-label="Members only"])
 youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has([aria-label="Members first"]) 
