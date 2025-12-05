@@ -8,6 +8,10 @@
 ! ░░ YouTube – Blockiere unerwünschte Kanäle per @Handle (Startseite, Suche, Grid, Sidebar) ░░
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Wort, 4 Bereiche)
+! YT Home - Hide videos that contain the word "silksong" in the title (case-insensitive)  
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(:is(#video-title-link,h3)[title~="afd"i])
+youtube.com###related :is(ytd-compact-video-renderer,yt-lockup-view-model):has(:is(#video-title,h3)[title~="afd"i])
+
 youtube.com##ytd-rich-item-renderer:has(yt-formatted-string[aria-label*=" EILMELDUNG " i])
 youtube.com##ytd-video-renderer:has(yt-formatted-string[aria-label*=" EILMELDUNG " i])
 youtube.com##a.ytp-videowall-still[aria-label*=" EILMELDUNG " i]
