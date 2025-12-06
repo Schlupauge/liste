@@ -42,12 +42,19 @@ youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has([aria-label="Nur 
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
 
-youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^11111111111$/))
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Die andere Seite der Mauer$/))
 youtube.com##ytd-video-renderer:has(a[href*="/@11111111111"i])
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@11111111111"i])
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@11111111111"i])
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@11111111111"i])
 youtube.com##ytd-channel-renderer:has(a[href*="/@11111111111"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^11111111111$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@DieandereSeitederMauer308"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@DieandereSeitederMauer308"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@DieandereSeitederMauer308"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@DieandereSeitederMauer308"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@DieandereSeitederMauer308"i])
 
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Gesellschaft im Wandel$/))
 youtube.com##ytd-video-renderer:has(a[href*="/@GesellschaftimWandel-g9o"i])
