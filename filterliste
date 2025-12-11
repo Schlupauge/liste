@@ -1,11 +1,14 @@
 ! Title: Hide YouTube Trash
 ! Description: Hide all traces of YouTube Trash videos on YouTube
 ! Version: 1.10.0
-! Last modified: 2025-12-06 20:14
+! Last modified: 2025-12-11 20:14
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://raw.githubusercontent.com/Schlupauge/liste/refs/heads/main/filterliste
 ! License: https://github.com/gijsdev/ublock-hide-yt-shorts/blob/master/LICENSE.md
 ! ░░ YouTube – Blockiere unerwünschte Kanäle per @Handle (Startseite, Suche, Grid, Sidebar) ░░
+
+! ▶︎ EIN Filterblock der alle Videos unter 1k kicks filtert
+www.youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:not(:has(#video-title[aria-label~="views"], .yt-lockup-view-model-wiz--collection-stack-2)) :is(#metadata-line>span:first-of-type, .yt-content-metadata-view-model-wiz__metadata-row>span:first-of-type):has-text("views"):not(:has-text(/[KMB]\b/)):upward(ytd-rich-item-renderer)
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Wort, 4 Bereiche)
 ! YT Home - Hide videos that contain the word "silksong" in the title (case-insensitive)
@@ -70,6 +73,21 @@ youtube.com##ytd-rich-item-renderer:has-text(/EILMELDUNG/i)
 youtube.com##ytd-grid-video-renderer:has-text(/EILMELDUNG/i)
 youtube.com##ytd-compact-video-renderer:has-text(/EILMELDUNG/i)
 
+youtube.com##ytd-video-renderer:has-text(/EILMELDUNG/i)
+youtube.com##ytd-rich-item-renderer:has-text(/EILMELDUNG/i)
+youtube.com##ytd-grid-video-renderer:has-text(/EILMELDUNG/i)
+youtube.com##ytd-compact-video-renderer:has-text(/EILMELDUNG/i)
+
+youtube.com##ytd-video-renderer:has-text(/putin/i)
+youtube.com##ytd-rich-item-renderer:has-text(/putin/i)
+youtube.com##ytd-grid-video-renderer:has-text(/putin/i)
+youtube.com##ytd-compact-video-renderer:has-text(/putin/i)
+
+youtube.com##ytd-video-renderer:has-text(/panik/i)
+youtube.com##ytd-rich-item-renderer:has-text(/panik/i)
+youtube.com##ytd-grid-video-renderer:has-text(/panik/i)
+youtube.com##ytd-compact-video-renderer:has-text(/panik/i)
+
 
 youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has([aria-label="Members only"])
 youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has([aria-label="Members first"]) 
@@ -83,6 +101,62 @@ youtube.com##ytd-rich-item-renderer:has(a[href*="/@____________"i])
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@____________"i])
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@____________"i])
 youtube.com##ytd-channel-renderer:has(a[href*="/@____________"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^____________$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@____________"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^EuropaPolitik Kompakt$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@EuropaPolitikKompakt"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@EuropaPolitikKompakt"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@EuropaPolitikKompakt"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@EuropaPolitikKompakt"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@EuropaPolitikKompakt"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Politik Deutschland!$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@PolitikDeutschland-i4x"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitikDeutschland-i4x"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitikDeutschland-i4x"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitikDeutschland-i4x"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@PolitikDeutschland-i4x"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Der Politische Puls$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@DerPolitischePuls-j1y"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@DerPolitischePuls-j1y"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@DerPolitischePuls-j1y"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@DerPolitischePuls-j1y"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@DerPolitischePuls-j1y"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Politik ohne Grenzen$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@PolitikohneGrenzen-85"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitikohneGrenzen-85"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitikohneGrenzen-85"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitikohneGrenzen-85"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@PolitikohneGrenzen-85"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^NeuePerspektive$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@NeuePerspektive-v7k"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@NeuePerspektive-v7k"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@NeuePerspektive-v7k"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@NeuePerspektive-v7k"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@NeuePerspektive-v7k"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Klartext Deutschland 2025$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@KlartextDeutschland2025"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@KlartextDeutschland2025"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@KlartextDeutschland2025"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@KlartextDeutschland2025"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@KlartextDeutschland2025"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Deutschland Entlarvt$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@DeutschlandEntlarvt"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@DeutschlandEntlarvt"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@DeutschlandEntlarvt"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@DeutschlandEntlarvt"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@DeutschlandEntlarvt"i])
 
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Zukunft Deutschland$/))
 youtube.com##ytd-video-renderer:has(a[href*="/@ZukunftDeutschland-u3o"i])
