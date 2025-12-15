@@ -99,6 +99,11 @@ youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has([aria-label="Memb
 youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has([aria-label="Members first"]) 
 youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has([aria-label="Nur für Kanalmitglieder"]) 
 
+! ▶︎ verstekt auto syncro
+www.youtube.com##ytd-video-renderer:has-text(/automatisch synchronisiert/i)
+www.youtube.com##ytd-rich-item-renderer:has-text(/automatisch synchronisiert/i)
+www.youtube.com##ytd-compact-video-renderer:has-text(/automatisch synchronisiert/i)
+
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
 
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^____________$/))
