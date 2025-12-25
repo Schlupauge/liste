@@ -95,6 +95,14 @@ youtube.com##ytd-grid-video-renderer:has-text(/panik/i)
 youtube.com##ytd-compact-video-renderer:has-text(/panik/i)
 
 
+! YT Home - Hide videos based on their titles
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#video-title-link:is([title*="Martin Sellner"], [title*="Martin Sellner"i], [title~="Martin Sellner"]))
+youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has(#video-title-link:is([title*="Freie Sachsen"], [title*="freie sachsen"i], [title~="freie sachsen"]))
+
+! YT Sidebar - Hide videos based on their titles
+youtube.com###related ytd-compact-video-renderer:has(#video-title:is([title*="FREIE SACHSEN"], [title*="freie sachsen"i], [title~="freie sachsen"]))
+youtube.com###related ytd-compact-video-renderer:has(#video-title:is([title*="Martin Sellner"], [title*="Martin Sellner"i], [title~="Martin Sellner"]))
+
 youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has([aria-label="Members only"])
 youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has([aria-label="Members first"]) 
 youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has([aria-label="Nur für Kanalmitglieder"]) 
