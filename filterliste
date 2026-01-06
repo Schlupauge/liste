@@ -25,6 +25,13 @@ youtube.com##ytd-grid-video-renderer:has(a[href*="/@____________"i])
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@____________"i])
 youtube.com##ytd-channel-renderer:has(a[href*="/@____________"i])
 
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^____________$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@Questo-u8u"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@Questo-u8u"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@Questo-u8u"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@Questo-u8u"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@Questo-u8u"i])
+
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Deutschland Ess-Insider$/))
 youtube.com##ytd-video-renderer:has(a[href*="/@DeutschlandEssInsider"i])
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@DeutschlandEssInsider"i])
