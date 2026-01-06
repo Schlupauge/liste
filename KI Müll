@@ -1,1 +1,61 @@
+! Title: Hide YouTube KI Trash
+! Description: Hide all traces of YouTube Trash videos on YouTube
+! Version: 1.11.0
+! Last modified: 2026-01-01 20:14
+! Expires: 12 hours (update frequency)
+! Homepage: https://raw.githubusercontent.com/Schlupauge/liste/refs/heads/main/filterliste
+! License: https://github.com/gijsdev/ublock-hide-yt-shorts/blob/master/LICENSE.md
+! qelle https://www.reddit.com/r/uBlockOrigin/wiki/solutions/youtube/#wiki_suggested_videos
+! ░░ YouTube – Blockiere unerwünschte Kanäle per @Handle (Startseite, Suche, Grid, Sidebar) ░░
 
+! ▶︎ EIN Filterblock der alle Videos unter 10k kicks filtert
+! Home / Startseite (DE) — Videos mit 1–4-stelligen Aufrufzahlen (unter 10.000)
+www.youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:has-text(/^[0-9]{1,3}(?:\s[0-9]{3})?\s*Aufrufe$/i)
+! Suchergebnisse — Videos mit 1–4-stelligen Aufrufzahlen (unter 10.000)
+www.youtube.com##ytd-video-renderer:has-text(/^[0-9]{1,3}(?:\s[0-9]{3})?\s*Aufrufe$/i)
+! Seitenleiste / Empfehlungen — Videos mit 1–4-stelligen Aufrufzahlen (unter 10.000)
+www.youtube.com##ytd-compact-video-renderer:has-text(/^[0-9]{1,3}(?:\s[0-9]{3})?\s*Aufrufe$/i)
+
+! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^____________$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@____________"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^____________$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@____________"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^____________$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@____________"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^____________$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@____________"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Ancient Roots Network$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@AncientRootsNetwork"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@AncientRootsNetwork"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@AncientRootsNetwork"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@AncientRootsNetwork"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@AncientRootsNetwork"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Historische Frontlinien$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@HistorischeFrontlinien"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@HistorischeFrontlinien"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@HistorischeFrontlinien"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@HistorischeFrontlinien"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@HistorischeFrontlinien"i])
