@@ -17,12 +17,48 @@ www.youtube.com##ytd-video-renderer:has-text(/^[0-9]{1,3}(?:\s[0-9]{3})?\s*Aufru
 www.youtube.com##ytd-compact-video-renderer:has-text(/^[0-9]{1,3}(?:\s[0-9]{3})?\s*Aufrufe$/i)
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
+
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^____________$/))
 youtube.com##ytd-video-renderer:has(a[href*="/@____________"i])
 youtube.com##ytd-rich-item-renderer:has(a[href*="/@____________"i])
 youtube.com##ytd-grid-video-renderer:has(a[href*="/@____________"i])
 youtube.com##ytd-compact-video-renderer:has(a[href*="/@____________"i])
 youtube.com##ytd-channel-renderer:has(a[href*="/@____________"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^____________$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@____________"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^____________$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@____________"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^____________$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@____________"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^____________$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@____________"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@____________"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Stimme Deutschlands 365$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@StimmeDeutschlands1"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@StimmeDeutschlands1"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@StimmeDeutschlands1"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@StimmeDeutschlands1"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@StimmeDeutschlands1"i])
 
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^WetterKlar$/))
 youtube.com##ytd-video-renderer:has(a[href*="/@WetterKlar"i])
