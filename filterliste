@@ -1,7 +1,7 @@
 ! Title: Hide YouTube Trash
 ! Description: Hide all traces of YouTube Trash videos on YouTube
 ! Version: 1.11.0
-! Last modified: 2026-03-26 20:14
+! Last modified: 2026-03-29 21:14
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://raw.githubusercontent.com/Schlupauge/liste/refs/heads/main/filterliste
 ! License: https://github.com/gijsdev/ublock-hide-yt-shorts/blob/master/LICENSE.md
@@ -17,6 +17,83 @@ www.youtube.com##ytd-video-renderer:has-text(/^[0-9]{1,3}(?:\s[0-9]{3})?\s*Aufru
 www.youtube.com##ytd-compact-video-renderer:has-text(/^[0-9]{1,3}(?:\s[0-9]{3})?\s*Aufrufe$/i)
 
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Kanal, 4 Bereiche)
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^_______$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@_______"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@_______"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@_______"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@_______"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@_______"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^_______$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@_______"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@_______"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@_______"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@_______"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@_______"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^_______$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@_______"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@_______"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@_______"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@_______"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@_______"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Abenteuer Tiefsee$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@Abenteuer-Tiefsee"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@Abenteuer-Tiefsee"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@Abenteuer-Tiefsee"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@Abenteuer-Tiefsee"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@Abenteuer-Tiefsee"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^VÖLKER DER WELT $/))
+youtube.com##ytd-video-renderer:has(a[href*="/@völkerderwelt"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@völkerderwelt"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@völkerderwelt"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@völkerderwelt"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@völkerderwelt"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Langweilige Währung$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@LangweiligeWährung"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@LangweiligeWährung"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@LangweiligeWährung"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@LangweiligeWährung"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@LangweiligeWährung"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Technik$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@technikprofil"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@technikprofil"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@technikprofil"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@technikprofil"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@technikprofil"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Politik Radar DE$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@PolitikRadarDEG"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@PolitikRadarDEG"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@PolitikRadarDEG"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@PolitikRadarDEG"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@PolitikRadarDEG"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Ratgeber Gesundheit$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@RatgeberGesundheit90"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@RatgeberGesundheit90"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@RatgeberGesundheit90"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@RatgeberGesundheit90"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@RatgeberGesundheit90"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^TopNewsCheck$/))
+youtube.com##ytd-video-renderer:has(a[href*="/@TopNewsCheck"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@TopNewsCheck"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@TopNewsCheck"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@TopNewsCheck"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@TopNewsCheck"i])
+
+youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Deutsches Renten-Update $/))
+youtube.com##ytd-video-renderer:has(a[href*="/@DeutschesRentenUpdate"i])
+youtube.com##ytd-rich-item-renderer:has(a[href*="/@DeutschesRentenUpdate"i])
+youtube.com##ytd-grid-video-renderer:has(a[href*="/@DeutschesRentenUpdate"i])
+youtube.com##ytd-compact-video-renderer:has(a[href*="/@DeutschesRentenUpdate"i])
+youtube.com##ytd-channel-renderer:has(a[href*="/@DeutschesRentenUpdate"i])
 
 youtube.com##ytd-video-renderer:has(ytd-channel-name a:has-text(/^Macht & Wahrheit$/))
 youtube.com##ytd-video-renderer:has(a[href*="/@WahrMacht"i])
