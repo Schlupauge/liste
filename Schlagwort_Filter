@@ -19,6 +19,36 @@ www.youtube.com##ytd-compact-video-renderer:has-text(/^[0-9]{1,3}(?:\s[0-9]{3})?
 ! ▶︎ EIN Filterblock für alle Bereiche (jede Zeile = 1 Wort, 4 Bereiche)
 ! YT Home - Hide videos that contain the word "silksong" in the title (case-insensitive)
 
+youtube.com##ytd-video-renderer:has-text(/___/i)
+youtube.com##ytd-rich-item-renderer:has-text(/___/i)
+youtube.com##ytd-grid-video-renderer:has-text(/___/i)
+youtube.com##ytd-compact-video-renderer:has-text(/___/i)
+
+youtube.com##ytd-video-renderer:has-text(/___/i)
+youtube.com##ytd-rich-item-renderer:has-text(/___/i)
+youtube.com##ytd-grid-video-renderer:has-text(/___/i)
+youtube.com##ytd-compact-video-renderer:has-text(/___/i)
+
+youtube.com##ytd-video-renderer:has-text(/VERBOTSWAHNSINN/i)
+youtube.com##ytd-rich-item-renderer:has-text(/VERBOTSWAHNSINN/i)
+youtube.com##ytd-grid-video-renderer:has-text(/VERBOTSWAHNSINN/i)
+youtube.com##ytd-compact-video-renderer:has-text(/VERBOTSWAHNSINN/i)
+
+youtube.com##ytd-video-renderer:has-text(/SKANDAL/i)
+youtube.com##ytd-rich-item-renderer:has-text(/SKANDAL/i)
+youtube.com##ytd-grid-video-renderer:has-text(/SKANDAL/i)
+youtube.com##ytd-compact-video-renderer:has-text(/SKANDAL/i)
+
+youtube.com##ytd-video-renderer:has-text(/Marine Le Pen/i)
+youtube.com##ytd-rich-item-renderer:has-text(/Marine Le Pen/i)
+youtube.com##ytd-grid-video-renderer:has-text(/Marine Le Pen/i)
+youtube.com##ytd-compact-video-renderer:has-text(/Marine Le Pen/i)
+
+youtube.com##ytd-video-renderer:has-text(/verrat/i)
+youtube.com##ytd-rich-item-renderer:has-text(/verrat/i)
+youtube.com##ytd-grid-video-renderer:has-text(/verrat/i)
+youtube.com##ytd-compact-video-renderer:has-text(/verrat/i)
+
 youtube.com##ytd-video-renderer:has-text(/afd/i)
 youtube.com##ytd-rich-item-renderer:has-text(/afd/i)
 youtube.com##ytd-grid-video-renderer:has-text(/afd/i)
