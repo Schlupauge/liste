@@ -8,6 +8,9 @@
 ! qelle https://www.reddit.com/r/uBlockOrigin/wiki/solutions/youtube/#wiki_suggested_videos
 ! ░░ YouTube – Blockiere unerwünschte Kanäle per @Handle (Startseite, Suche, Grid, Sidebar) ░░
 
+! ▶ Eielmeldung
+##.ytd-rich-section-renderer.style-scope > .ytd-rich-shelf-renderer.style-scope
+
 ! ▶ Shorts auf der Startseite & überall sonst
 
 ! Remove empty spaces in grid
